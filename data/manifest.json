@@ -1,0 +1,4643 @@
+{
+  "generatedAt": "2026-09-16",
+  "total": 301,
+  "methodFamilies": [
+    "Deret waktu & peramalan",
+    "Keuangan, biaya & risiko",
+    "Kualitatif, literatur & penulisan",
+    "MCDM, optimasi & riset operasi",
+    "Machine learning, AI & data mining",
+    "Meta-analisis & sintesis bukti",
+    "Pemodelan matematis, numerik & kendali",
+    "Regresi, korelasi & ekonometrika",
+    "SEM, pengukuran & psikometri",
+    "Spasial, geografis & GIS",
+    "Statistik deskriptif & pengolahan data",
+    "Uji hipotesis & rancangan eksperimen",
+    "Visualisasi, dashboard & presentasi"
+  ],
+  "methodCounts": {
+    "Regresi, korelasi & ekonometrika": 80,
+    "Pemodelan matematis, numerik & kendali": 14,
+    "Deret waktu & peramalan": 27,
+    "MCDM, optimasi & riset operasi": 33,
+    "Statistik deskriptif & pengolahan data": 31,
+    "Uji hipotesis & rancangan eksperimen": 24,
+    "Machine learning, AI & data mining": 48,
+    "Spasial, geografis & GIS": 19,
+    "Kualitatif, literatur & penulisan": 12,
+    "SEM, pengukuran & psikometri": 22,
+    "Keuangan, biaya & risiko": 9,
+    "Visualisasi, dashboard & presentasi": 11,
+    "Meta-analisis & sintesis bukti": 6
+  },
+  "applicationCombinations": [
+    "AMOS",
+    "EViews",
+    "Excel",
+    "Gurobi",
+    "JASP",
+    "MATLAB",
+    "Maple",
+    "Mendeley",
+    "Minitab",
+    "Python",
+    "Python, Gurobi",
+    "QGIS",
+    "R / RStudio",
+    "R / RStudio, QGIS",
+    "RapidMiner",
+    "SPSS",
+    "SPSS, SmartPLS",
+    "SmartPLS",
+    "Stata"
+  ],
+  "applicationTokenCounts": {
+    "R / RStudio": 112,
+    "MATLAB": 13,
+    "Excel": 46,
+    "JASP": 3,
+    "SPSS": 55,
+    "Python": 32,
+    "QGIS": 3,
+    "Minitab": 2,
+    "Gurobi": 3,
+    "Stata": 16,
+    "Mendeley": 1,
+    "EViews": 6,
+    "RapidMiner": 2,
+    "SmartPLS": 10,
+    "Maple": 1,
+    "AMOS": 1
+  },
+  "languageCounts": {
+    "R": 100,
+    "MATLAB": 13,
+    "None": 139,
+    "Jupyter Notebook": 23,
+    "Python": 6,
+    "Stata": 17,
+    "HTML": 3
+  },
+  "excludedLegacyRepos": [
+    "Prediksi-Tindak-Pidan-Pencurian-dengan-K-NN",
+    "Zero-Inflated-Poisson-with-Joint-Model"
+  ],
+  "repos": [
+    {
+      "name": "2-stage-least-square-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/2-stage-least-square-r",
+      "updatedAt": "2026-09-14T12:38:46Z",
+      "createdAt": "2026-09-14T12:38:34Z",
+      "sizeKb": 16058
+    },
+    {
+      "name": "a-star-bellman-ford-and-floyd-warshall-matlab",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/a-star-bellman-ford-and-floyd-warshall-matlab",
+      "updatedAt": "2026-09-14T12:20:05Z",
+      "createdAt": "2026-09-14T12:19:56Z",
+      "sizeKb": 49
+    },
+    {
+      "name": "abftsmc-matlab",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/abftsmc-matlab",
+      "updatedAt": "2026-09-14T12:21:06Z",
+      "createdAt": "2026-09-14T12:20:52Z",
+      "sizeKb": 8
+    },
+    {
+      "name": "ahc-arima-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/ahc-arima-r",
+      "updatedAt": "2026-09-14T23:05:19Z",
+      "createdAt": "2026-09-14T12:31:40Z",
+      "sizeKb": 206
+    },
+    {
+      "name": "ahp-dra-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/ahp-dra-r",
+      "updatedAt": "2026-09-14T12:41:54Z",
+      "createdAt": "2026-09-14T12:41:42Z",
+      "sizeKb": 1880
+    },
+    {
+      "name": "ahp-excel",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ahp-excel",
+      "updatedAt": "2026-09-14T12:41:46Z",
+      "createdAt": "2026-09-14T12:41:34Z",
+      "sizeKb": 847
+    },
+    {
+      "name": "ahp-excel-2",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ahp-excel-2",
+      "updatedAt": "2026-09-14T12:42:03Z",
+      "createdAt": "2026-09-14T12:41:52Z",
+      "sizeKb": 1077
+    },
+    {
+      "name": "ahp-excel-3",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ahp-excel-3",
+      "updatedAt": "2026-09-14T23:06:21Z",
+      "createdAt": "2026-09-14T22:51:17Z",
+      "sizeKb": 1479
+    },
+    {
+      "name": "ahp-topsis-excel",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ahp-topsis-excel",
+      "updatedAt": "2026-09-14T12:21:10Z",
+      "createdAt": "2026-09-14T12:21:00Z",
+      "sizeKb": 405
+    },
+    {
+      "name": "algoritma-genetika-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/algoritma-genetika-r",
+      "updatedAt": "2026-09-14T22:41:28Z",
+      "createdAt": "2026-09-14T22:41:18Z",
+      "sizeKb": 135
+    },
+    {
+      "name": "analisis-deskriptif-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/analisis-deskriptif-r",
+      "updatedAt": "2026-09-14T23:06:40Z",
+      "createdAt": "2026-09-14T22:51:53Z",
+      "sizeKb": 237
+    },
+    {
+      "name": "analisis-korelasi-jasp",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "JASP",
+      "applications": [
+        "JASP"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/analisis-korelasi-jasp",
+      "updatedAt": "2026-09-14T12:21:18Z",
+      "createdAt": "2026-09-14T12:21:08Z",
+      "sizeKb": 18
+    },
+    {
+      "name": "analisis-moderasi-jasp",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "JASP",
+      "applications": [
+        "JASP"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/analisis-moderasi-jasp",
+      "updatedAt": "2026-09-14T12:21:24Z",
+      "createdAt": "2026-09-14T12:21:15Z",
+      "sizeKb": 24
+    },
+    {
+      "name": "analisis-pretest-and-posttest-with-nonparametric-model-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/analisis-pretest-and-posttest-with-nonparametric-model-spss",
+      "updatedAt": "2026-09-14T22:40:39Z",
+      "createdAt": "2026-09-14T22:40:28Z",
+      "sizeKb": 129
+    },
+    {
+      "name": "analisis-rank-spearman-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/analisis-rank-spearman-spss",
+      "updatedAt": "2026-09-14T22:37:35Z",
+      "createdAt": "2026-09-14T22:37:25Z",
+      "sizeKb": 106
+    },
+    {
+      "name": "analisis-sentimen-dengan-indobert-dengan-bayesian-optimization-python",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/analisis-sentimen-dengan-indobert-dengan-bayesian-optimization-python",
+      "updatedAt": "2026-09-14T12:42:18Z",
+      "createdAt": "2026-09-14T12:42:03Z",
+      "sizeKb": 5530
+    },
+    {
+      "name": "analisis-sentimen-grab-dan-gojek-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/analisis-sentimen-grab-dan-gojek-r",
+      "updatedAt": "2026-09-14T12:36:00Z",
+      "createdAt": "2026-09-14T12:35:46Z",
+      "sizeKb": 10526
+    },
+    {
+      "name": "analisis-sentimen-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/analisis-sentimen-r",
+      "updatedAt": "2026-09-14T12:21:31Z",
+      "createdAt": "2026-09-14T12:21:22Z",
+      "sizeKb": 48
+    },
+    {
+      "name": "analisis-sentimen-tumpeng-menoreh-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/analisis-sentimen-tumpeng-menoreh-r",
+      "updatedAt": "2026-09-14T12:21:44Z",
+      "createdAt": "2026-09-14T12:21:29Z",
+      "sizeKb": 2667
+    },
+    {
+      "name": "analisis-spasial-dengan-r-dan-qgis",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio, QGIS",
+      "applications": [
+        "R / RStudio",
+        "QGIS"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/analisis-spasial-dengan-r-dan-qgis",
+      "updatedAt": "2026-09-14T22:38:14Z",
+      "createdAt": "2026-09-14T22:37:35Z",
+      "sizeKb": 87816
+    },
+    {
+      "name": "analisis-wawancara-dengan-koding-ada-open-axial-selective-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/analisis-wawancara-dengan-koding-ada-open-axial-selective-excel",
+      "updatedAt": "2026-09-14T22:48:00Z",
+      "createdAt": "2026-09-14T22:47:50Z",
+      "sizeKb": 7
+    },
+    {
+      "name": "angka-penting-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/angka-penting-excel",
+      "updatedAt": "2026-09-14T12:21:58Z",
+      "createdAt": "2026-09-14T12:21:38Z",
+      "sizeKb": 74154
+    },
+    {
+      "name": "ann-matlab",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/ann-matlab",
+      "updatedAt": "2026-09-14T12:42:26Z",
+      "createdAt": "2026-09-14T12:42:14Z",
+      "sizeKb": 977
+    },
+    {
+      "name": "ann-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/ann-python",
+      "updatedAt": "2026-09-14T12:22:06Z",
+      "createdAt": "2026-09-14T12:21:55Z",
+      "sizeKb": 1332
+    },
+    {
+      "name": "ann-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/ann-r",
+      "updatedAt": "2026-09-14T12:43:54Z",
+      "createdAt": "2026-09-14T12:43:44Z",
+      "sizeKb": 91
+    },
+    {
+      "name": "ann-regresi-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/ann-regresi-r",
+      "updatedAt": "2026-09-14T22:41:05Z",
+      "createdAt": "2026-09-14T22:40:55Z",
+      "sizeKb": 78
+    },
+    {
+      "name": "anova-and-manova-r",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/anova-and-manova-r",
+      "updatedAt": "2026-09-14T12:40:53Z",
+      "createdAt": "2026-09-14T12:40:43Z",
+      "sizeKb": 45
+    },
+    {
+      "name": "anova-for-clusters-r",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/anova-for-clusters-r",
+      "updatedAt": "2026-09-14T12:42:35Z",
+      "createdAt": "2026-09-14T12:42:23Z",
+      "sizeKb": 22
+    },
+    {
+      "name": "anova-post-hoc-test-and-kaplan-meier-in-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/anova-post-hoc-test-and-kaplan-meier-in-spss",
+      "updatedAt": "2026-09-14T12:42:43Z",
+      "createdAt": "2026-09-14T12:42:32Z",
+      "sizeKb": 190
+    },
+    {
+      "name": "anova-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/anova-spss",
+      "updatedAt": "2026-09-14T22:36:49Z",
+      "createdAt": "2026-09-14T22:36:39Z",
+      "sizeKb": 28
+    },
+    {
+      "name": "apriori-algorithm-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/apriori-algorithm-r",
+      "updatedAt": "2026-09-14T12:42:52Z",
+      "createdAt": "2026-09-14T12:42:40Z",
+      "sizeKb": 1251
+    },
+    {
+      "name": "arima-and-ols-in-minitab",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "Minitab",
+      "applications": [
+        "Minitab"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/arima-and-ols-in-minitab",
+      "updatedAt": "2026-09-14T12:34:33Z",
+      "createdAt": "2026-09-14T12:34:21Z",
+      "sizeKb": 1084
+    },
+    {
+      "name": "arima-garch-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/arima-garch-r",
+      "updatedAt": "2026-09-14T12:36:39Z",
+      "createdAt": "2026-09-14T12:36:29Z",
+      "sizeKb": 781
+    },
+    {
+      "name": "arima-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/arima-r",
+      "updatedAt": "2026-09-14T12:22:15Z",
+      "createdAt": "2026-09-14T12:22:04Z",
+      "sizeKb": 12
+    },
+    {
+      "name": "arimax-qrnn-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/arimax-qrnn-r",
+      "updatedAt": "2026-09-14T12:43:00Z",
+      "createdAt": "2026-09-14T12:42:49Z",
+      "sizeKb": 98
+    },
+    {
+      "name": "armax-garch-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/armax-garch-r",
+      "updatedAt": "2026-09-14T12:36:32Z",
+      "createdAt": "2026-09-14T12:36:21Z",
+      "sizeKb": 654
+    },
+    {
+      "name": "artificial-neural-network-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/artificial-neural-network-r",
+      "updatedAt": "2026-09-14T12:36:23Z",
+      "createdAt": "2026-09-14T12:36:13Z",
+      "sizeKb": 193
+    },
+    {
+      "name": "average-based-fuzzy-time-series-markov-chain-matlab",
+      "methods": [
+        "Deret waktu & peramalan",
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/average-based-fuzzy-time-series-markov-chain-matlab",
+      "updatedAt": "2026-09-14T12:22:22Z",
+      "createdAt": "2026-09-14T12:22:12Z",
+      "sizeKb": 56
+    },
+    {
+      "name": "backpropagation-ann-in-matlab",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/backpropagation-ann-in-matlab",
+      "updatedAt": "2026-09-14T22:50:42Z",
+      "createdAt": "2026-09-14T22:50:33Z",
+      "sizeKb": 8
+    },
+    {
+      "name": "backpropagation-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/backpropagation-r",
+      "updatedAt": "2026-09-14T12:22:38Z",
+      "createdAt": "2026-09-14T12:22:28Z",
+      "sizeKb": 24
+    },
+    {
+      "name": "binary-logistic-regression-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/binary-logistic-regression-spss",
+      "updatedAt": "2026-09-14T22:49:34Z",
+      "createdAt": "2026-09-14T22:49:25Z",
+      "sizeKb": 37
+    },
+    {
+      "name": "block-allocation-with-gurobi",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Gurobi",
+      "applications": [
+        "Gurobi"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/block-allocation-with-gurobi",
+      "updatedAt": "2026-09-14T22:44:39Z",
+      "createdAt": "2026-09-14T22:44:29Z",
+      "sizeKb": 9
+    },
+    {
+      "name": "bnj-excel",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/bnj-excel",
+      "updatedAt": "2026-09-14T12:22:46Z",
+      "createdAt": "2026-09-14T12:22:35Z",
+      "sizeKb": 204
+    },
+    {
+      "name": "boxplot-and-descriptive-analysis-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/boxplot-and-descriptive-analysis-spss",
+      "updatedAt": "2026-09-14T22:43:54Z",
+      "createdAt": "2026-09-14T22:43:43Z",
+      "sizeKb": 50
+    },
+    {
+      "name": "bwema-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/bwema-r",
+      "updatedAt": "2026-09-14T12:36:47Z",
+      "createdAt": "2026-09-14T12:36:37Z",
+      "sizeKb": 11
+    },
+    {
+      "name": "canonical-component-analysis-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/canonical-component-analysis-r",
+      "updatedAt": "2026-09-14T12:40:37Z",
+      "createdAt": "2026-09-14T12:40:28Z",
+      "sizeKb": 86
+    },
+    {
+      "name": "canonical-component-analysis-r-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/canonical-component-analysis-r-2",
+      "updatedAt": "2026-09-14T12:41:07Z",
+      "createdAt": "2026-09-14T12:40:57Z",
+      "sizeKb": 51
+    },
+    {
+      "name": "cfa-and-ordinal-logistic-regression-in-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/cfa-and-ordinal-logistic-regression-in-stata",
+      "updatedAt": "2026-09-14T12:44:11Z",
+      "createdAt": "2026-09-14T12:43:59Z",
+      "sizeKb": 1451
+    },
+    {
+      "name": "classification-and-clustering-in-r-markdown",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "HTML",
+      "url": "https://github.com/juliyandi35/classification-and-clustering-in-r-markdown",
+      "updatedAt": "2026-09-14T12:44:25Z",
+      "createdAt": "2026-09-14T12:44:09Z",
+      "sizeKb": 10653
+    },
+    {
+      "name": "cleaning-5-million-data-in-stata",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/cleaning-5-million-data-in-stata",
+      "updatedAt": "2026-09-14T12:45:02Z",
+      "createdAt": "2026-09-14T12:44:20Z",
+      "sizeKb": 25760
+    },
+    {
+      "name": "cleaning-baru-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/cleaning-baru-r",
+      "updatedAt": "2026-09-14T12:45:16Z",
+      "createdAt": "2026-09-14T12:44:55Z",
+      "sizeKb": 22315
+    },
+    {
+      "name": "cleaning-data-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/cleaning-data-r",
+      "updatedAt": "2026-09-14T13:05:01Z",
+      "createdAt": "2026-09-14T12:46:17Z",
+      "sizeKb": 4767172
+    },
+    {
+      "name": "cleaning-data-stata",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/cleaning-data-stata",
+      "updatedAt": "2026-09-14T12:46:25Z",
+      "createdAt": "2026-09-14T12:45:13Z",
+      "sizeKb": 41691
+    },
+    {
+      "name": "cleansing-data-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/cleansing-data-r",
+      "updatedAt": "2026-09-14T13:08:41Z",
+      "createdAt": "2026-09-14T13:04:59Z",
+      "sizeKb": 434187
+    },
+    {
+      "name": "clustering-and-regression-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/clustering-and-regression-r",
+      "updatedAt": "2026-09-14T13:08:45Z",
+      "createdAt": "2026-09-14T13:08:28Z",
+      "sizeKb": 215
+    },
+    {
+      "name": "clustering-with-k-means-and-dbscan-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/clustering-with-k-means-and-dbscan-python",
+      "updatedAt": "2026-09-14T13:08:50Z",
+      "createdAt": "2026-09-14T13:08:37Z",
+      "sizeKb": 4070
+    },
+    {
+      "name": "cnn-for-spatial-point-pattern-in-r",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/cnn-for-spatial-point-pattern-in-r",
+      "updatedAt": "2026-09-14T22:50:18Z",
+      "createdAt": "2026-09-14T22:50:07Z",
+      "sizeKb": 2284
+    },
+    {
+      "name": "cnn-resnet50-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/cnn-resnet50-python",
+      "updatedAt": "2026-09-14T22:42:52Z",
+      "createdAt": "2026-09-14T22:41:37Z",
+      "sizeKb": 181385
+    },
+    {
+      "name": "cnn-squeezenet-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/cnn-squeezenet-python",
+      "updatedAt": "2026-09-14T22:43:37Z",
+      "createdAt": "2026-09-14T22:42:55Z",
+      "sizeKb": 164747
+    },
+    {
+      "name": "completing-2-stage-least-square-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/completing-2-stage-least-square-r",
+      "updatedAt": "2026-09-14T22:40:21Z",
+      "createdAt": "2026-09-14T22:40:10Z",
+      "sizeKb": 787
+    },
+    {
+      "name": "confirmatory-factor-analysis-cfa-r",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/confirmatory-factor-analysis-cfa-r",
+      "updatedAt": "2026-09-14T12:23:07Z",
+      "createdAt": "2026-09-14T12:22:51Z",
+      "sizeKb": 24099
+    },
+    {
+      "name": "convolutional-neural-network-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/convolutional-neural-network-python",
+      "updatedAt": "2026-09-14T12:35:41Z",
+      "createdAt": "2026-09-14T12:35:27Z",
+      "sizeKb": 10936
+    },
+    {
+      "name": "cophenetic-correlation-coefficients-in-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/cophenetic-correlation-coefficients-in-r",
+      "updatedAt": "2026-09-14T13:09:05Z",
+      "createdAt": "2026-09-14T13:08:47Z",
+      "sizeKb": 807
+    },
+    {
+      "name": "cox-ingersoll-ross-model-with-conditional-least-square-estimation-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/cox-ingersoll-ross-model-with-conditional-least-square-estimation-r",
+      "updatedAt": "2026-09-14T22:37:07Z",
+      "createdAt": "2026-09-14T22:36:57Z",
+      "sizeKb": 40
+    },
+    {
+      "name": "cramers-v-r",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/cramers-v-r",
+      "updatedAt": "2026-09-14T23:06:38Z",
+      "createdAt": "2026-09-14T22:41:04Z",
+      "sizeKb": 11202
+    },
+    {
+      "name": "craziness-based-pso-matlab",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/craziness-based-pso-matlab",
+      "updatedAt": "2026-09-14T22:35:56Z",
+      "createdAt": "2026-09-14T22:35:46Z",
+      "sizeKb": 64
+    },
+    {
+      "name": "cross-sectional-study-with-linear-regression-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/cross-sectional-study-with-linear-regression-spss",
+      "updatedAt": "2026-09-14T22:47:11Z",
+      "createdAt": "2026-09-14T22:47:02Z",
+      "sizeKb": 22
+    },
+    {
+      "name": "crosstab-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/crosstab-spss",
+      "updatedAt": "2026-09-14T12:23:16Z",
+      "createdAt": "2026-09-14T12:23:05Z",
+      "sizeKb": 16
+    },
+    {
+      "name": "daftar-penjualan-3-hari-terakhir-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/daftar-penjualan-3-hari-terakhir-excel",
+      "updatedAt": "2026-09-14T12:23:24Z",
+      "createdAt": "2026-09-14T12:23:12Z",
+      "sizeKb": 16
+    },
+    {
+      "name": "daftar-pustaka-mendeley",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Mendeley",
+      "applications": [
+        "Mendeley"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/daftar-pustaka-mendeley",
+      "updatedAt": "2026-09-14T12:29:29Z",
+      "createdAt": "2026-09-14T12:23:19Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "dashboard-excel",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/dashboard-excel",
+      "updatedAt": "2026-09-14T12:23:34Z",
+      "createdAt": "2026-09-14T12:23:24Z",
+      "sizeKb": 834
+    },
+    {
+      "name": "dashboard-excel-2",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/dashboard-excel-2",
+      "updatedAt": "2026-09-15T04:58:13Z",
+      "createdAt": "2026-09-15T04:58:02Z",
+      "sizeKb": 1410
+    },
+    {
+      "name": "dashboard-grab-excel",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/dashboard-grab-excel",
+      "updatedAt": "2026-09-14T13:09:10Z",
+      "createdAt": "2026-09-14T13:08:56Z",
+      "sizeKb": 260
+    },
+    {
+      "name": "data-manipulation-validity-and-reliability-in-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/data-manipulation-validity-and-reliability-in-spss",
+      "updatedAt": "2026-09-14T22:25:51Z",
+      "createdAt": "2026-09-14T13:09:04Z",
+      "sizeKb": 155
+    },
+    {
+      "name": "data-summarize-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/data-summarize-r",
+      "updatedAt": "2026-09-14T22:26:13Z",
+      "createdAt": "2026-09-14T22:25:58Z",
+      "sizeKb": 1094
+    },
+    {
+      "name": "dcc-garch-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/dcc-garch-r",
+      "updatedAt": "2026-09-14T22:26:19Z",
+      "createdAt": "2026-09-14T22:26:08Z",
+      "sizeKb": 321
+    },
+    {
+      "name": "dea-stata",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/dea-stata",
+      "updatedAt": "2026-09-14T12:23:41Z",
+      "createdAt": "2026-09-14T12:23:31Z",
+      "sizeKb": 31
+    },
+    {
+      "name": "decision-tree-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "HTML",
+      "url": "https://github.com/juliyandi35/decision-tree-r",
+      "updatedAt": "2026-09-14T12:23:49Z",
+      "createdAt": "2026-09-14T12:23:39Z",
+      "sizeKb": 334
+    },
+    {
+      "name": "decision-tree-r-2",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/decision-tree-r-2",
+      "updatedAt": "2026-09-14T12:37:55Z",
+      "createdAt": "2026-09-14T12:37:46Z",
+      "sizeKb": 731
+    },
+    {
+      "name": "decision-tree-r-3",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/decision-tree-r-3",
+      "updatedAt": "2026-09-14T22:26:27Z",
+      "createdAt": "2026-09-14T22:26:17Z",
+      "sizeKb": 854
+    },
+    {
+      "name": "defuzzyfikasi-r",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/defuzzyfikasi-r",
+      "updatedAt": "2026-09-14T22:26:36Z",
+      "createdAt": "2026-09-14T22:26:25Z",
+      "sizeKb": 525
+    },
+    {
+      "name": "discrete-choice-modelling-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/discrete-choice-modelling-r",
+      "updatedAt": "2026-09-14T22:26:44Z",
+      "createdAt": "2026-09-14T22:26:33Z",
+      "sizeKb": 203
+    },
+    {
+      "name": "dynamic-programming-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/dynamic-programming-r",
+      "updatedAt": "2026-09-14T12:36:16Z",
+      "createdAt": "2026-09-14T12:36:05Z",
+      "sizeKb": 51
+    },
+    {
+      "name": "dynamic-time-warping-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/dynamic-time-warping-r",
+      "updatedAt": "2026-09-14T23:06:35Z",
+      "createdAt": "2026-09-14T12:37:29Z",
+      "sizeKb": 139
+    },
+    {
+      "name": "efa-spss",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/efa-spss",
+      "updatedAt": "2026-09-14T23:05:59Z",
+      "createdAt": "2026-09-14T22:26:42Z",
+      "sizeKb": 119
+    },
+    {
+      "name": "entropy-weight-method-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/entropy-weight-method-r",
+      "updatedAt": "2026-09-14T12:23:57Z",
+      "createdAt": "2026-09-14T12:23:46Z",
+      "sizeKb": 195
+    },
+    {
+      "name": "eviews-panel-regression",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/eviews-panel-regression",
+      "updatedAt": "2026-09-14T22:27:02Z",
+      "createdAt": "2026-09-14T22:26:50Z",
+      "sizeKb": 72
+    },
+    {
+      "name": "find-combinations-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/find-combinations-python",
+      "updatedAt": "2026-09-14T22:27:07Z",
+      "createdAt": "2026-09-14T22:26:58Z",
+      "sizeKb": 9
+    },
+    {
+      "name": "fmolp-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/fmolp-r",
+      "updatedAt": "2026-09-14T22:27:16Z",
+      "createdAt": "2026-09-14T22:27:06Z",
+      "sizeKb": 11
+    },
+    {
+      "name": "forecasting-excel",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/forecasting-excel",
+      "updatedAt": "2026-09-14T12:24:04Z",
+      "createdAt": "2026-09-14T12:23:53Z",
+      "sizeKb": 144
+    },
+    {
+      "name": "forecasting-regresi-linear-dan-ets-excel",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/forecasting-regresi-linear-dan-ets-excel",
+      "updatedAt": "2026-09-14T12:24:12Z",
+      "createdAt": "2026-09-14T12:24:02Z",
+      "sizeKb": 58
+    },
+    {
+      "name": "forest-plot-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/forest-plot-r",
+      "updatedAt": "2026-09-14T12:43:24Z",
+      "createdAt": "2026-09-14T12:43:04Z",
+      "sizeKb": 45793
+    },
+    {
+      "name": "fp-growth-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "HTML",
+      "url": "https://github.com/juliyandi35/fp-growth-r",
+      "updatedAt": "2026-09-14T12:37:17Z",
+      "createdAt": "2026-09-14T12:37:06Z",
+      "sizeKb": 767
+    },
+    {
+      "name": "frequency-analysis-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/frequency-analysis-spss",
+      "updatedAt": "2026-09-14T12:40:23Z",
+      "createdAt": "2026-09-14T12:40:13Z",
+      "sizeKb": 11
+    },
+    {
+      "name": "fuzzy-ahp-dengan-excel",
+      "methods": [
+        "MCDM, optimasi & riset operasi",
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/fuzzy-ahp-dengan-excel",
+      "updatedAt": "2026-09-14T12:24:19Z",
+      "createdAt": "2026-09-14T12:24:09Z",
+      "sizeKb": 295
+    },
+    {
+      "name": "fuzzy-ahp-matlab",
+      "methods": [
+        "MCDM, optimasi & riset operasi",
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/fuzzy-ahp-matlab",
+      "updatedAt": "2026-09-14T12:36:54Z",
+      "createdAt": "2026-09-14T12:36:44Z",
+      "sizeKb": 158
+    },
+    {
+      "name": "fuzzy-knn-r",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/fuzzy-knn-r",
+      "updatedAt": "2026-09-14T12:24:27Z",
+      "createdAt": "2026-09-14T12:24:17Z",
+      "sizeKb": 379
+    },
+    {
+      "name": "fuzzy-triangular-sigmoid-dan-gaussian-python",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/fuzzy-triangular-sigmoid-dan-gaussian-python",
+      "updatedAt": "2026-09-14T12:24:34Z",
+      "createdAt": "2026-09-14T12:24:25Z",
+      "sizeKb": 36
+    },
+    {
+      "name": "game-theory-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/game-theory-python",
+      "updatedAt": "2026-09-14T12:24:42Z",
+      "createdAt": "2026-09-14T12:24:32Z",
+      "sizeKb": 19
+    },
+    {
+      "name": "gbm-dt-knn-lr-rf-svm-xgb-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/gbm-dt-knn-lr-rf-svm-xgb-python",
+      "updatedAt": "2026-09-14T12:30:20Z",
+      "createdAt": "2026-09-14T12:24:39Z",
+      "sizeKb": 874
+    },
+    {
+      "name": "geographically-weighted-lasso-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/geographically-weighted-lasso-r",
+      "updatedAt": "2026-09-14T12:37:02Z",
+      "createdAt": "2026-09-14T12:36:52Z",
+      "sizeKb": 36
+    },
+    {
+      "name": "geographically-weighted-lasso-r-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/geographically-weighted-lasso-r-2",
+      "updatedAt": "2026-09-14T12:39:30Z",
+      "createdAt": "2026-09-14T12:39:02Z",
+      "sizeKb": 86064
+    },
+    {
+      "name": "geographically-weighted-poisson-regression-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/geographically-weighted-poisson-regression-r",
+      "updatedAt": "2026-09-14T22:40:30Z",
+      "createdAt": "2026-09-14T22:40:19Z",
+      "sizeKb": 1562
+    },
+    {
+      "name": "glm-dan-spline-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/glm-dan-spline-r",
+      "updatedAt": "2026-09-14T12:24:55Z",
+      "createdAt": "2026-09-14T12:24:46Z",
+      "sizeKb": 25
+    },
+    {
+      "name": "gmm-fixing-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/gmm-fixing-stata",
+      "updatedAt": "2026-09-14T12:25:04Z",
+      "createdAt": "2026-09-14T12:24:53Z",
+      "sizeKb": 34
+    },
+    {
+      "name": "gmm-in-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gmm-in-r",
+      "updatedAt": "2026-09-14T22:27:25Z",
+      "createdAt": "2026-09-14T22:27:13Z",
+      "sizeKb": 1112
+    },
+    {
+      "name": "gmm-model-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gmm-model-r",
+      "updatedAt": "2026-09-14T22:44:17Z",
+      "createdAt": "2026-09-14T22:44:00Z",
+      "sizeKb": 33644
+    },
+    {
+      "name": "gmm-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/gmm-stata",
+      "updatedAt": "2026-09-14T12:25:21Z",
+      "createdAt": "2026-09-14T12:25:02Z",
+      "sizeKb": 90
+    },
+    {
+      "name": "gmm-stata-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/gmm-stata-2",
+      "updatedAt": "2026-09-14T22:27:34Z",
+      "createdAt": "2026-09-14T22:27:23Z",
+      "sizeKb": 210
+    },
+    {
+      "name": "gra-matlab",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/gra-matlab",
+      "updatedAt": "2026-09-14T12:25:38Z",
+      "createdAt": "2026-09-14T12:25:09Z",
+      "sizeKb": 173
+    },
+    {
+      "name": "grafik-data-stunting-anak-13-puskesmas-r",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/grafik-data-stunting-anak-13-puskesmas-r",
+      "updatedAt": "2026-09-14T22:27:43Z",
+      "createdAt": "2026-09-14T22:27:32Z",
+      "sizeKb": 976
+    },
+    {
+      "name": "grafik-excel",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/grafik-excel",
+      "updatedAt": "2026-09-14T12:25:41Z",
+      "createdAt": "2026-09-14T12:25:18Z",
+      "sizeKb": 13
+    },
+    {
+      "name": "grafik-excel-2",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/grafik-excel-2",
+      "updatedAt": "2026-09-14T12:25:44Z",
+      "createdAt": "2026-09-14T12:25:25Z",
+      "sizeKb": 17
+    },
+    {
+      "name": "grafik-pasang-surut-excel",
+      "methods": [
+        "Deret waktu & peramalan",
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/grafik-pasang-surut-excel",
+      "updatedAt": "2026-09-14T22:48:17Z",
+      "createdAt": "2026-09-14T22:48:07Z",
+      "sizeKb": 145
+    },
+    {
+      "name": "grey-relational-analysis-matlab",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/grey-relational-analysis-matlab",
+      "updatedAt": "2026-09-14T12:39:43Z",
+      "createdAt": "2026-09-14T12:39:33Z",
+      "sizeKb": 68
+    },
+    {
+      "name": "gsadf-test-and-var-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gsadf-test-and-var-r",
+      "updatedAt": "2026-09-14T22:44:26Z",
+      "createdAt": "2026-09-14T22:44:15Z",
+      "sizeKb": 1149
+    },
+    {
+      "name": "gstar-r",
+      "methods": [
+        "Deret waktu & peramalan",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gstar-r",
+      "updatedAt": "2026-09-14T12:25:44Z",
+      "createdAt": "2026-09-14T12:25:32Z",
+      "sizeKb": 167
+    },
+    {
+      "name": "gurobi-with-ip-and-ilp-optimation-in-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python, Gurobi",
+      "applications": [
+        "Python",
+        "Gurobi"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/gurobi-with-ip-and-ilp-optimation-in-python",
+      "updatedAt": "2026-09-14T22:49:52Z",
+      "createdAt": "2026-09-14T22:49:41Z",
+      "sizeKb": 87
+    },
+    {
+      "name": "gwnbr-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwnbr-r",
+      "updatedAt": "2026-09-14T12:29:05Z",
+      "createdAt": "2026-09-14T12:25:40Z",
+      "sizeKb": 166
+    },
+    {
+      "name": "gwpr-2-excel",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/gwpr-2-excel",
+      "updatedAt": "2026-09-14T12:29:51Z",
+      "createdAt": "2026-09-14T12:26:20Z",
+      "sizeKb": 30616
+    },
+    {
+      "name": "gwpr-in-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwpr-in-r",
+      "updatedAt": "2026-09-14T22:27:53Z",
+      "createdAt": "2026-09-14T22:27:41Z",
+      "sizeKb": 7206
+    },
+    {
+      "name": "gwpr-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwpr-r",
+      "updatedAt": "2026-09-14T12:26:32Z",
+      "createdAt": "2026-09-14T12:25:48Z",
+      "sizeKb": 116206
+    },
+    {
+      "name": "gwpr-r-2",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwpr-r-2",
+      "updatedAt": "2026-09-14T12:40:08Z",
+      "createdAt": "2026-09-14T12:39:40Z",
+      "sizeKb": 90949
+    },
+    {
+      "name": "gwr-and-gwrr-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwr-and-gwrr-r",
+      "updatedAt": "2026-09-14T22:28:36Z",
+      "createdAt": "2026-09-14T22:28:14Z",
+      "sizeKb": 52763
+    },
+    {
+      "name": "gwr-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwr-r",
+      "updatedAt": "2026-09-14T12:38:31Z",
+      "createdAt": "2026-09-14T12:37:54Z",
+      "sizeKb": 57428
+    },
+    {
+      "name": "gwr-r-2",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/gwr-r-2",
+      "updatedAt": "2026-09-14T22:28:18Z",
+      "createdAt": "2026-09-14T22:27:51Z",
+      "sizeKb": 42737
+    },
+    {
+      "name": "hitung-dividend-payout-ratio-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/hitung-dividend-payout-ratio-excel",
+      "updatedAt": "2026-09-14T22:43:44Z",
+      "createdAt": "2026-09-14T22:43:34Z",
+      "sizeKb": 30
+    },
+    {
+      "name": "icor-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/icor-excel",
+      "updatedAt": "2026-09-14T12:30:55Z",
+      "createdAt": "2026-09-14T12:30:43Z",
+      "sizeKb": 129
+    },
+    {
+      "name": "image-detection-with-yolov8-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/image-detection-with-yolov8-python",
+      "updatedAt": "2026-09-14T22:46:18Z",
+      "createdAt": "2026-09-14T22:44:37Z",
+      "sizeKb": 182862
+    },
+    {
+      "name": "implisit-dan-crack-nicolson-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/implisit-dan-crack-nicolson-r",
+      "updatedAt": "2026-09-14T12:31:05Z",
+      "createdAt": "2026-09-14T12:30:51Z",
+      "sizeKb": 2
+    },
+    {
+      "name": "important-performance-analysis-spss",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/important-performance-analysis-spss",
+      "updatedAt": "2026-09-14T12:41:00Z",
+      "createdAt": "2026-09-14T12:40:50Z",
+      "sizeKb": 35
+    },
+    {
+      "name": "independent-sample-t-test-and-n-gain-score-in-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/independent-sample-t-test-and-n-gain-score-in-spss",
+      "updatedAt": "2026-09-14T22:28:43Z",
+      "createdAt": "2026-09-14T22:28:33Z",
+      "sizeKb": 85
+    },
+    {
+      "name": "item-response-theory-in-r",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/item-response-theory-in-r",
+      "updatedAt": "2026-09-14T22:49:43Z",
+      "createdAt": "2026-09-14T22:49:32Z",
+      "sizeKb": 174
+    },
+    {
+      "name": "jackknife-pls-r",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/jackknife-pls-r",
+      "updatedAt": "2026-09-14T22:28:57Z",
+      "createdAt": "2026-09-14T22:28:46Z",
+      "sizeKb": 677
+    },
+    {
+      "name": "jasp-glms",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "JASP",
+      "applications": [
+        "JASP"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/jasp-glms",
+      "updatedAt": "2026-09-14T12:31:15Z",
+      "createdAt": "2026-09-14T12:30:58Z",
+      "sizeKb": 12780
+    },
+    {
+      "name": "jkn-knn-nbc-and-c4-5-excel",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/jkn-knn-nbc-and-c4-5-excel",
+      "updatedAt": "2026-09-14T22:29:08Z",
+      "createdAt": "2026-09-14T22:28:54Z",
+      "sizeKb": 703
+    },
+    {
+      "name": "jurnal-eviews",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/jurnal-eviews",
+      "updatedAt": "2026-09-14T12:31:20Z",
+      "createdAt": "2026-09-14T12:31:09Z",
+      "sizeKb": 21
+    },
+    {
+      "name": "k-means-clustering-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/k-means-clustering-r",
+      "updatedAt": "2026-09-14T22:29:13Z",
+      "createdAt": "2026-09-14T22:29:02Z",
+      "sizeKb": 815
+    },
+    {
+      "name": "k-means-dbscan-and-topsis-in-python",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/k-means-dbscan-and-topsis-in-python",
+      "updatedAt": "2026-09-14T22:47:05Z",
+      "createdAt": "2026-09-14T22:46:50Z",
+      "sizeKb": 17693
+    },
+    {
+      "name": "k-means-in-rapidminer",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "RapidMiner",
+      "applications": [
+        "RapidMiner"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/k-means-in-rapidminer",
+      "updatedAt": "2026-09-14T22:32:45Z",
+      "createdAt": "2026-09-14T22:29:12Z",
+      "sizeKb": 733625
+    },
+    {
+      "name": "kernel-and-spline-regression-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/kernel-and-spline-regression-r",
+      "updatedAt": "2026-09-14T12:36:08Z",
+      "createdAt": "2026-09-14T12:35:57Z",
+      "sizeKb": 405
+    },
+    {
+      "name": "kmeans-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/kmeans-python",
+      "updatedAt": "2026-09-14T12:31:29Z",
+      "createdAt": "2026-09-14T12:31:16Z",
+      "sizeKb": 883
+    },
+    {
+      "name": "knn-dan-nbc-excel",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/knn-dan-nbc-excel",
+      "updatedAt": "2026-09-14T12:31:38Z",
+      "createdAt": "2026-09-14T12:31:25Z",
+      "sizeKb": 500
+    },
+    {
+      "name": "knn-dengan-pso-python",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/knn-dengan-pso-python",
+      "updatedAt": "2026-09-14T12:31:42Z",
+      "createdAt": "2026-09-14T12:31:32Z",
+      "sizeKb": 118
+    },
+    {
+      "name": "knn-in-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/knn-in-python",
+      "updatedAt": "2026-09-14T22:32:52Z",
+      "createdAt": "2026-09-14T22:32:40Z",
+      "sizeKb": 587
+    },
+    {
+      "name": "knn-prediksi-tindak-pidana-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/knn-prediksi-tindak-pidana-excel",
+      "updatedAt": "2026-09-14T23:06:33Z",
+      "createdAt": "2026-09-14T23:02:07Z",
+      "sizeKb": 3792
+    },
+    {
+      "name": "knn-pso-sentimen-analysis-python",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/knn-pso-sentimen-analysis-python",
+      "updatedAt": "2026-09-14T12:41:29Z",
+      "createdAt": "2026-09-14T12:41:12Z",
+      "sizeKb": 9293
+    },
+    {
+      "name": "knn-pso-sentiment-analysis-excel",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/knn-pso-sentiment-analysis-excel",
+      "updatedAt": "2026-09-14T12:41:14Z",
+      "createdAt": "2026-09-14T12:41:04Z",
+      "sizeKb": 20
+    },
+    {
+      "name": "krigging-with-python",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/krigging-with-python",
+      "updatedAt": "2026-09-14T22:33:13Z",
+      "createdAt": "2026-09-14T22:32:53Z",
+      "sizeKb": 21168
+    },
+    {
+      "name": "latihan-soal-inflasi-r",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/latihan-soal-inflasi-r",
+      "updatedAt": "2026-09-14T12:37:31Z",
+      "createdAt": "2026-09-14T12:37:22Z",
+      "sizeKb": 2
+    },
+    {
+      "name": "lee-carter-model-in-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/lee-carter-model-in-r",
+      "updatedAt": "2026-09-14T22:33:22Z",
+      "createdAt": "2026-09-14T22:33:09Z",
+      "sizeKb": 3048
+    },
+    {
+      "name": "linear-model-decision-tree-dan-random-forest-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/linear-model-decision-tree-dan-random-forest-r",
+      "updatedAt": "2026-09-14T12:32:02Z",
+      "createdAt": "2026-09-14T12:31:52Z",
+      "sizeKb": 92
+    },
+    {
+      "name": "linear-model-dengan-python",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/linear-model-dengan-python",
+      "updatedAt": "2026-09-14T12:31:54Z",
+      "createdAt": "2026-09-14T12:31:47Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "linear-ridge-and-lasso-in-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/linear-ridge-and-lasso-in-r",
+      "updatedAt": "2026-09-14T12:32:10Z",
+      "createdAt": "2026-09-14T12:32:00Z",
+      "sizeKb": 511
+    },
+    {
+      "name": "liv-excel",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/liv-excel",
+      "updatedAt": "2026-09-14T12:32:17Z",
+      "createdAt": "2026-09-14T12:32:08Z",
+      "sizeKb": 17
+    },
+    {
+      "name": "logistic-regression-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/logistic-regression-spss",
+      "updatedAt": "2026-09-14T12:43:07Z",
+      "createdAt": "2026-09-14T12:42:57Z",
+      "sizeKb": 339
+    },
+    {
+      "name": "logistik-ordinal-in-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/logistik-ordinal-in-r",
+      "updatedAt": "2026-09-14T22:48:52Z",
+      "createdAt": "2026-09-14T22:48:42Z",
+      "sizeKb": 43
+    },
+    {
+      "name": "loglinear-chi-square-r",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/loglinear-chi-square-r",
+      "updatedAt": "2026-09-14T22:48:33Z",
+      "createdAt": "2026-09-14T22:48:24Z",
+      "sizeKb": 12
+    },
+    {
+      "name": "manipulasi-data-in-stata",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/manipulasi-data-in-stata",
+      "updatedAt": "2026-09-14T22:33:35Z",
+      "createdAt": "2026-09-14T22:33:19Z",
+      "sizeKb": 11172
+    },
+    {
+      "name": "mapping-jumlah-mobile-vendors-qgis",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "QGIS",
+      "applications": [
+        "QGIS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/mapping-jumlah-mobile-vendors-qgis",
+      "updatedAt": "2026-09-14T22:33:45Z",
+      "createdAt": "2026-09-14T22:33:32Z",
+      "sizeKb": 2733
+    },
+    {
+      "name": "markowitz-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/markowitz-excel",
+      "updatedAt": "2026-09-14T22:33:52Z",
+      "createdAt": "2026-09-14T22:33:42Z",
+      "sizeKb": 55
+    },
+    {
+      "name": "mean-populasi-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/mean-populasi-excel",
+      "updatedAt": "2026-09-14T12:32:24Z",
+      "createdAt": "2026-09-14T12:32:15Z",
+      "sizeKb": 8
+    },
+    {
+      "name": "menghitung-bep-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/menghitung-bep-excel",
+      "updatedAt": "2026-09-14T12:32:32Z",
+      "createdAt": "2026-09-14T12:32:22Z",
+      "sizeKb": 21
+    },
+    {
+      "name": "meta-analisis-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/meta-analisis-r",
+      "updatedAt": "2026-09-14T12:32:40Z",
+      "createdAt": "2026-09-14T12:32:29Z",
+      "sizeKb": 1402
+    },
+    {
+      "name": "meta-analysis-in-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/meta-analysis-in-r",
+      "updatedAt": "2026-09-14T22:50:52Z",
+      "createdAt": "2026-09-14T22:50:41Z",
+      "sizeKb": 388
+    },
+    {
+      "name": "meta-analysis-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/meta-analysis-r",
+      "updatedAt": "2026-09-14T22:34:04Z",
+      "createdAt": "2026-09-14T22:33:51Z",
+      "sizeKb": 604
+    },
+    {
+      "name": "metode-grafik-kendali-maximum-multivariate-cumulative-sum-max-mcusum-r",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali",
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/metode-grafik-kendali-maximum-multivariate-cumulative-sum-max-mcusum-r",
+      "updatedAt": "2026-09-14T12:32:48Z",
+      "createdAt": "2026-09-14T12:32:38Z",
+      "sizeKb": 30
+    },
+    {
+      "name": "metode-transformasi-wavelet-diskrit-daubechies-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/metode-transformasi-wavelet-diskrit-daubechies-r",
+      "updatedAt": "2026-09-14T12:32:55Z",
+      "createdAt": "2026-09-14T12:32:45Z",
+      "sizeKb": 19
+    },
+    {
+      "name": "mix-method-sentiment-analysis-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/mix-method-sentiment-analysis-python",
+      "updatedAt": "2026-09-14T22:39:38Z",
+      "createdAt": "2026-09-14T22:39:16Z",
+      "sizeKb": 69256
+    },
+    {
+      "name": "model-indobert-with-cnn-ltsm-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/model-indobert-with-cnn-ltsm-python",
+      "updatedAt": "2026-09-14T22:47:52Z",
+      "createdAt": "2026-09-14T22:47:38Z",
+      "sizeKb": 10017
+    },
+    {
+      "name": "model-klasifikasi-dan-time-series-forecasting-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/model-klasifikasi-dan-time-series-forecasting-r",
+      "updatedAt": "2026-09-14T22:34:13Z",
+      "createdAt": "2026-09-14T22:34:01Z",
+      "sizeKb": 5884
+    },
+    {
+      "name": "model-regresi-dengan-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/model-regresi-dengan-spss",
+      "updatedAt": "2026-09-14T22:36:21Z",
+      "createdAt": "2026-09-14T22:36:11Z",
+      "sizeKb": 8
+    },
+    {
+      "name": "moderated-regression-in-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/moderated-regression-in-spss",
+      "updatedAt": "2026-09-14T22:34:20Z",
+      "createdAt": "2026-09-14T22:34:11Z",
+      "sizeKb": 86
+    },
+    {
+      "name": "modwt-arima-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/modwt-arima-r",
+      "updatedAt": "2026-09-14T12:34:46Z",
+      "createdAt": "2026-09-14T12:34:37Z",
+      "sizeKb": 10
+    },
+    {
+      "name": "mrqap-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/mrqap-r",
+      "updatedAt": "2026-09-14T12:43:46Z",
+      "createdAt": "2026-09-14T12:43:36Z",
+      "sizeKb": 596
+    },
+    {
+      "name": "multi-item-dynamic-economic-order-quantity-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/multi-item-dynamic-economic-order-quantity-python",
+      "updatedAt": "2026-09-14T22:40:12Z",
+      "createdAt": "2026-09-14T22:40:00Z",
+      "sizeKb": 1436
+    },
+    {
+      "name": "multinomial-logistic-and-sensitivity-analysis-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/multinomial-logistic-and-sensitivity-analysis-spss",
+      "updatedAt": "2026-09-14T22:48:26Z",
+      "createdAt": "2026-09-14T22:48:16Z",
+      "sizeKb": 90
+    },
+    {
+      "name": "naskah-karya-perorangan-python",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/naskah-karya-perorangan-python",
+      "updatedAt": "2026-09-14T22:34:29Z",
+      "createdAt": "2026-09-14T22:34:19Z",
+      "sizeKb": 68
+    },
+    {
+      "name": "network-meta-analysis-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/network-meta-analysis-r",
+      "updatedAt": "2026-09-14T22:34:45Z",
+      "createdAt": "2026-09-14T22:34:29Z",
+      "sizeKb": 5321
+    },
+    {
+      "name": "neural-network-with-pso-python",
+      "methods": [
+        "Machine learning, AI & data mining",
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/neural-network-with-pso-python",
+      "updatedAt": "2026-09-14T22:47:19Z",
+      "createdAt": "2026-09-14T22:47:10Z",
+      "sizeKb": 549
+    },
+    {
+      "name": "nlp-sentiment-analysis-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/nlp-sentiment-analysis-python",
+      "updatedAt": "2026-09-14T22:34:54Z",
+      "createdAt": "2026-09-14T22:34:43Z",
+      "sizeKb": 877
+    },
+    {
+      "name": "nma-acne-scars-r",
+      "methods": [
+        "Meta-analisis & sintesis bukti"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/nma-acne-scars-r",
+      "updatedAt": "2026-09-14T22:35:02Z",
+      "createdAt": "2026-09-14T22:34:52Z",
+      "sizeKb": 565
+    },
+    {
+      "name": "nonparametric-regression-with-fourier-series-approach-r",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen",
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/nonparametric-regression-with-fourier-series-approach-r",
+      "updatedAt": "2026-09-14T22:35:10Z",
+      "createdAt": "2026-09-14T22:35:00Z",
+      "sizeKb": 10
+    },
+    {
+      "name": "normality-test-validation-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/normality-test-validation-spss",
+      "updatedAt": "2026-09-14T22:38:19Z",
+      "createdAt": "2026-09-14T22:38:08Z",
+      "sizeKb": 85
+    },
+    {
+      "name": "olah-data-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/olah-data-excel",
+      "updatedAt": "2026-09-14T12:22:54Z",
+      "createdAt": "2026-09-14T12:22:44Z",
+      "sizeKb": 14
+    },
+    {
+      "name": "olah-data-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/olah-data-r",
+      "updatedAt": "2026-09-14T22:35:32Z",
+      "createdAt": "2026-09-14T22:35:17Z",
+      "sizeKb": 7110
+    },
+    {
+      "name": "olah-data-r-2",
+      "methods": [
+        "Statistik deskriptif & pengolahan data",
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/olah-data-r-2",
+      "updatedAt": "2026-09-14T23:06:16Z",
+      "createdAt": "2026-09-14T22:50:58Z",
+      "sizeKb": 274
+    },
+    {
+      "name": "olah-data-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/olah-data-spss",
+      "updatedAt": "2026-09-14T22:35:20Z",
+      "createdAt": "2026-09-14T22:35:09Z",
+      "sizeKb": 12
+    },
+    {
+      "name": "olah-data-spss-2",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/olah-data-spss-2",
+      "updatedAt": "2026-09-14T22:39:22Z",
+      "createdAt": "2026-09-14T22:38:17Z",
+      "sizeKb": 187263
+    },
+    {
+      "name": "ols-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ols-spss",
+      "updatedAt": "2026-09-14T12:37:08Z",
+      "createdAt": "2026-09-14T12:36:59Z",
+      "sizeKb": 145
+    },
+    {
+      "name": "ols-spss-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ols-spss-2",
+      "updatedAt": "2026-09-14T12:39:03Z",
+      "createdAt": "2026-09-14T12:38:52Z",
+      "sizeKb": 154
+    },
+    {
+      "name": "ols-spss-3",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ols-spss-3",
+      "updatedAt": "2026-09-14T12:40:45Z",
+      "createdAt": "2026-09-14T12:40:35Z",
+      "sizeKb": 545
+    },
+    {
+      "name": "ols-spss-4",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ols-spss-4",
+      "updatedAt": "2026-09-14T23:06:04Z",
+      "createdAt": "2026-09-14T22:35:30Z",
+      "sizeKb": 53
+    },
+    {
+      "name": "one-step-gmm-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/one-step-gmm-stata",
+      "updatedAt": "2026-09-14T12:33:03Z",
+      "createdAt": "2026-09-14T12:32:53Z",
+      "sizeKb": 1116
+    },
+    {
+      "name": "optimalisasi-fuel-ratio-r",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/optimalisasi-fuel-ratio-r",
+      "updatedAt": "2026-09-14T22:48:44Z",
+      "createdAt": "2026-09-14T22:48:31Z",
+      "sizeKb": 5961
+    },
+    {
+      "name": "ordinary-linear-regression-in-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/ordinary-linear-regression-in-spss",
+      "updatedAt": "2026-09-14T22:35:49Z",
+      "createdAt": "2026-09-14T22:35:38Z",
+      "sizeKb": 57
+    },
+    {
+      "name": "p2p-loan-default-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/p2p-loan-default-python",
+      "updatedAt": "2026-09-14T23:06:11Z",
+      "createdAt": "2026-09-14T22:44:25Z",
+      "sizeKb": 5532
+    },
+    {
+      "name": "paired-t-test-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/paired-t-test-spss",
+      "updatedAt": "2026-09-14T12:34:54Z",
+      "createdAt": "2026-09-14T12:34:44Z",
+      "sizeKb": 99
+    },
+    {
+      "name": "paired-t-test-spss-2",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/paired-t-test-spss-2",
+      "updatedAt": "2026-09-14T12:40:30Z",
+      "createdAt": "2026-09-14T12:40:20Z",
+      "sizeKb": 44
+    },
+    {
+      "name": "panel-egls-eviews",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/panel-egls-eviews",
+      "updatedAt": "2026-09-14T23:06:01Z",
+      "createdAt": "2026-09-14T22:28:41Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "panel-regression-excel",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/panel-regression-excel",
+      "updatedAt": "2026-09-14T12:38:36Z",
+      "createdAt": "2026-09-14T12:38:26Z",
+      "sizeKb": 18
+    },
+    {
+      "name": "panel-regression-in-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/panel-regression-in-stata",
+      "updatedAt": "2026-09-14T22:50:59Z",
+      "createdAt": "2026-09-14T22:50:50Z",
+      "sizeKb": 223
+    },
+    {
+      "name": "panel-regression-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/panel-regression-stata",
+      "updatedAt": "2026-09-14T12:37:24Z",
+      "createdAt": "2026-09-14T12:37:14Z",
+      "sizeKb": 305
+    },
+    {
+      "name": "partial-swarm-optimization-matlab",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/partial-swarm-optimization-matlab",
+      "updatedAt": "2026-09-14T12:35:48Z",
+      "createdAt": "2026-09-14T12:35:38Z",
+      "sizeKb": 77
+    },
+    {
+      "name": "path-analysis-excel",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/path-analysis-excel",
+      "updatedAt": "2026-09-14T12:40:15Z",
+      "createdAt": "2026-09-14T12:40:04Z",
+      "sizeKb": 23
+    },
+    {
+      "name": "path-analysis-excel-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/path-analysis-excel-2",
+      "updatedAt": "2026-09-14T22:37:27Z",
+      "createdAt": "2026-09-14T22:37:15Z",
+      "sizeKb": 3500
+    },
+    {
+      "name": "path-analysis-in-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/path-analysis-in-spss",
+      "updatedAt": "2026-09-14T22:50:26Z",
+      "createdAt": "2026-09-14T22:50:16Z",
+      "sizeKb": 390
+    },
+    {
+      "name": "path-analysis-mediasi-dan-moderasi-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/path-analysis-mediasi-dan-moderasi-spss",
+      "updatedAt": "2026-09-14T22:49:17Z",
+      "createdAt": "2026-09-14T22:49:08Z",
+      "sizeKb": 113
+    },
+    {
+      "name": "path-analysis-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/path-analysis-spss",
+      "updatedAt": "2026-09-14T12:43:38Z",
+      "createdAt": "2026-09-14T12:43:29Z",
+      "sizeKb": 19
+    },
+    {
+      "name": "pca-dan-anova-minitab",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "Minitab",
+      "applications": [
+        "Minitab"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pca-dan-anova-minitab",
+      "updatedAt": "2026-09-14T12:33:13Z",
+      "createdAt": "2026-09-14T12:33:01Z",
+      "sizeKb": 1143
+    },
+    {
+      "name": "pca-k-means-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/pca-k-means-r",
+      "updatedAt": "2026-09-14T12:33:21Z",
+      "createdAt": "2026-09-14T12:33:10Z",
+      "sizeKb": 345
+    },
+    {
+      "name": "pegas-matlab",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/pegas-matlab",
+      "updatedAt": "2026-09-14T12:33:27Z",
+      "createdAt": "2026-09-14T12:33:18Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "pendulum-matlab",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/pendulum-matlab",
+      "updatedAt": "2026-09-14T12:33:37Z",
+      "createdAt": "2026-09-14T12:33:25Z",
+      "sizeKb": 12
+    },
+    {
+      "name": "pengambilan-sampel-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pengambilan-sampel-excel",
+      "updatedAt": "2026-09-14T12:33:44Z",
+      "createdAt": "2026-09-14T12:33:33Z",
+      "sizeKb": 9
+    },
+    {
+      "name": "penyusunan-artikel-pedagogichal-literature-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/penyusunan-artikel-pedagogichal-literature-excel",
+      "updatedAt": "2026-09-14T22:46:51Z",
+      "createdAt": "2026-09-14T22:46:42Z",
+      "sizeKb": 142
+    },
+    {
+      "name": "peramalan-dengan-fungsi-transfer-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/peramalan-dengan-fungsi-transfer-r",
+      "updatedAt": "2026-09-14T12:33:50Z",
+      "createdAt": "2026-09-14T12:33:41Z",
+      "sizeKb": 14
+    },
+    {
+      "name": "perbandingan-lasso-dan-lts-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/perbandingan-lasso-dan-lts-r",
+      "updatedAt": "2026-09-14T12:33:59Z",
+      "createdAt": "2026-09-14T12:33:48Z",
+      "sizeKb": 18
+    },
+    {
+      "name": "peta-excel",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/peta-excel",
+      "updatedAt": "2026-09-14T12:34:11Z",
+      "createdAt": "2026-09-14T12:33:56Z",
+      "sizeKb": 2242
+    },
+    {
+      "name": "peta-tematik-qgis",
+      "methods": [
+        "Spasial, geografis & GIS",
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "QGIS",
+      "applications": [
+        "QGIS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/peta-tematik-qgis",
+      "updatedAt": "2026-09-14T22:51:41Z",
+      "createdAt": "2026-09-14T22:51:25Z",
+      "sizeKb": 7122
+    },
+    {
+      "name": "plotting-data-in-histogram-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/plotting-data-in-histogram-spss",
+      "updatedAt": "2026-09-14T22:51:48Z",
+      "createdAt": "2026-09-14T22:51:38Z",
+      "sizeKb": 245
+    },
+    {
+      "name": "pls-sem-dengan-variabel-mediasi-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pls-sem-dengan-variabel-mediasi-spss",
+      "updatedAt": "2026-09-14T22:46:43Z",
+      "createdAt": "2026-09-14T22:46:33Z",
+      "sizeKb": 88
+    },
+    {
+      "name": "pls-sem-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pls-sem-excel",
+      "updatedAt": "2026-09-14T23:06:18Z",
+      "createdAt": "2026-09-14T22:51:07Z",
+      "sizeKb": 1430
+    },
+    {
+      "name": "pls-sem-in-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pls-sem-in-smartpls",
+      "updatedAt": "2026-09-14T22:50:09Z",
+      "createdAt": "2026-09-14T22:49:57Z",
+      "sizeKb": 3247
+    },
+    {
+      "name": "potret-fase-maple",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "Maple",
+      "applications": [
+        "Maple"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/potret-fase-maple",
+      "updatedAt": "2026-09-14T12:34:14Z",
+      "createdAt": "2026-09-14T12:34:08Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "ppr-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/ppr-r",
+      "updatedAt": "2026-09-14T12:34:23Z",
+      "createdAt": "2026-09-14T12:34:13Z",
+      "sizeKb": 117
+    },
+    {
+      "name": "pre-post-test-regression-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen",
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/pre-post-test-regression-spss",
+      "updatedAt": "2026-09-14T12:34:39Z",
+      "createdAt": "2026-09-14T12:34:29Z",
+      "sizeKb": 26
+    },
+    {
+      "name": "predictive-analysis-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/predictive-analysis-r",
+      "updatedAt": "2026-09-14T23:06:28Z",
+      "createdAt": "2026-09-14T22:59:45Z",
+      "sizeKb": 18104
+    },
+    {
+      "name": "processing-data-in-python",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/processing-data-in-python",
+      "updatedAt": "2026-09-14T22:48:09Z",
+      "createdAt": "2026-09-14T22:47:58Z",
+      "sizeKb": 106
+    },
+    {
+      "name": "python-gurobi-vrp",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python, Gurobi",
+      "applications": [
+        "Python",
+        "Gurobi"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/python-gurobi-vrp",
+      "updatedAt": "2026-09-14T23:00:45Z",
+      "createdAt": "2026-09-14T23:00:35Z",
+      "sizeKb": 51
+    },
+    {
+      "name": "rak-faktorial-excel",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/rak-faktorial-excel",
+      "updatedAt": "2026-09-14T22:51:55Z",
+      "createdAt": "2026-09-14T22:51:46Z",
+      "sizeKb": 280
+    },
+    {
+      "name": "rbd-lsd-and-fd-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/rbd-lsd-and-fd-spss",
+      "updatedAt": "2026-09-14T12:43:31Z",
+      "createdAt": "2026-09-14T12:43:21Z",
+      "sizeKb": 18
+    },
+    {
+      "name": "rbfnn-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/rbfnn-r",
+      "updatedAt": "2026-09-14T23:00:54Z",
+      "createdAt": "2026-09-14T23:00:43Z",
+      "sizeKb": 544
+    },
+    {
+      "name": "reformatting-data-pln-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/reformatting-data-pln-r",
+      "updatedAt": "2026-09-14T22:57:33Z",
+      "createdAt": "2026-09-14T22:57:22Z",
+      "sizeKb": 6193
+    },
+    {
+      "name": "reformatting-data-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/reformatting-data-r",
+      "updatedAt": "2026-09-14T22:57:25Z",
+      "createdAt": "2026-09-14T22:52:02Z",
+      "sizeKb": 1505569
+    },
+    {
+      "name": "regresi-in-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/regresi-in-stata",
+      "updatedAt": "2026-09-14T22:57:40Z",
+      "createdAt": "2026-09-14T22:57:31Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "regresi-linear-berganda-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-linear-berganda-spss",
+      "updatedAt": "2026-09-14T22:57:49Z",
+      "createdAt": "2026-09-14T22:57:39Z",
+      "sizeKb": 20
+    },
+    {
+      "name": "regresi-linear-di-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-linear-di-spss",
+      "updatedAt": "2026-09-14T22:57:56Z",
+      "createdAt": "2026-09-14T22:57:46Z",
+      "sizeKb": 48
+    },
+    {
+      "name": "regresi-logistik-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/regresi-logistik-r",
+      "updatedAt": "2026-09-14T23:01:10Z",
+      "createdAt": "2026-09-14T23:00:59Z",
+      "sizeKb": 23
+    },
+    {
+      "name": "regresi-logistik-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-logistik-spss",
+      "updatedAt": "2026-09-14T22:39:45Z",
+      "createdAt": "2026-09-14T22:39:36Z",
+      "sizeKb": 15
+    },
+    {
+      "name": "regresi-logistik-spss-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-logistik-spss-2",
+      "updatedAt": "2026-09-14T23:01:17Z",
+      "createdAt": "2026-09-14T23:01:07Z",
+      "sizeKb": 308
+    },
+    {
+      "name": "regresi-ols-100-responden-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-ols-100-responden-spss",
+      "updatedAt": "2026-09-14T12:44:02Z",
+      "createdAt": "2026-09-14T12:43:52Z",
+      "sizeKb": 68
+    },
+    {
+      "name": "regresi-ols-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-ols-spss",
+      "updatedAt": "2026-09-14T22:39:53Z",
+      "createdAt": "2026-09-14T22:39:43Z",
+      "sizeKb": 38
+    },
+    {
+      "name": "regresi-ols-spss-2",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-ols-spss-2",
+      "updatedAt": "2026-09-14T22:49:26Z",
+      "createdAt": "2026-09-14T22:49:16Z",
+      "sizeKb": 243
+    },
+    {
+      "name": "regresi-ols-spss-3",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-ols-spss-3",
+      "updatedAt": "2026-09-14T22:49:59Z",
+      "createdAt": "2026-09-14T22:49:49Z",
+      "sizeKb": 1131
+    },
+    {
+      "name": "regresi-ols-spss-4",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-ols-spss-4",
+      "updatedAt": "2026-09-14T22:58:04Z",
+      "createdAt": "2026-09-14T22:57:54Z",
+      "sizeKb": 37
+    },
+    {
+      "name": "regresi-panel-eviews",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-panel-eviews",
+      "updatedAt": "2026-09-14T22:49:01Z",
+      "createdAt": "2026-09-14T22:48:50Z",
+      "sizeKb": 201
+    },
+    {
+      "name": "regresi-panel-produksi-padi-stata",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/regresi-panel-produksi-padi-stata",
+      "updatedAt": "2026-09-14T22:58:12Z",
+      "createdAt": "2026-09-14T22:58:02Z",
+      "sizeKb": 38
+    },
+    {
+      "name": "regresi-panel-spasial-gwpr-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika",
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/regresi-panel-spasial-gwpr-r",
+      "updatedAt": "2026-09-14T23:01:48Z",
+      "createdAt": "2026-09-14T23:01:15Z",
+      "sizeKb": 89442
+    },
+    {
+      "name": "regresi-quantil-dan-robust-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/regresi-quantil-dan-robust-r",
+      "updatedAt": "2026-09-14T23:01:53Z",
+      "createdAt": "2026-09-14T23:01:43Z",
+      "sizeKb": 46
+    },
+    {
+      "name": "regresi-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-spss",
+      "updatedAt": "2026-09-14T23:01:01Z",
+      "createdAt": "2026-09-14T23:00:51Z",
+      "sizeKb": 12
+    },
+    {
+      "name": "regresi-univariat-bivariat-dan-multivariat-spss",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/regresi-univariat-bivariat-dan-multivariat-spss",
+      "updatedAt": "2026-09-14T22:36:58Z",
+      "createdAt": "2026-09-14T22:36:48Z",
+      "sizeKb": 138
+    },
+    {
+      "name": "rekonstruksi-tabel-stata",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/rekonstruksi-tabel-stata",
+      "updatedAt": "2026-09-14T12:35:06Z",
+      "createdAt": "2026-09-14T12:34:52Z",
+      "sizeKb": 5831
+    },
+    {
+      "name": "rekonstruksi-tabel-stata-2",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/rekonstruksi-tabel-stata-2",
+      "updatedAt": "2026-09-14T12:35:31Z",
+      "createdAt": "2026-09-14T12:35:02Z",
+      "sizeKb": 20196
+    },
+    {
+      "name": "return-saham-excel",
+      "methods": [
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/return-saham-excel",
+      "updatedAt": "2026-09-14T23:02:00Z",
+      "createdAt": "2026-09-14T23:01:50Z",
+      "sizeKb": 29
+    },
+    {
+      "name": "rmsprop-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/rmsprop-python",
+      "updatedAt": "2026-09-14T22:58:27Z",
+      "createdAt": "2026-09-14T22:58:18Z",
+      "sizeKb": 149
+    },
+    {
+      "name": "robust-weighted-least-square-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/robust-weighted-least-square-r",
+      "updatedAt": "2026-09-14T12:38:57Z",
+      "createdAt": "2026-09-14T12:38:44Z",
+      "sizeKb": 27
+    },
+    {
+      "name": "robustness-test-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/robustness-test-spss",
+      "updatedAt": "2026-09-14T22:36:41Z",
+      "createdAt": "2026-09-14T22:36:29Z",
+      "sizeKb": 3654
+    },
+    {
+      "name": "sarima-and-sarimax-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/sarima-and-sarimax-r",
+      "updatedAt": "2026-09-14T22:36:16Z",
+      "createdAt": "2026-09-14T22:36:03Z",
+      "sizeKb": 80
+    },
+    {
+      "name": "second-order-pls-in-smartpls-4",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/second-order-pls-in-smartpls-4",
+      "updatedAt": "2026-09-14T22:47:39Z",
+      "createdAt": "2026-09-14T22:47:27Z",
+      "sizeKb": 3610
+    },
+    {
+      "name": "seir-in-matlab",
+      "methods": [
+        "Pemodelan matematis, numerik & kendali"
+      ],
+      "applicationRaw": "MATLAB",
+      "applications": [
+        "MATLAB"
+      ],
+      "language": "MATLAB",
+      "url": "https://github.com/juliyandi35/seir-in-matlab",
+      "updatedAt": "2026-09-14T22:58:35Z",
+      "createdAt": "2026-09-14T22:58:26Z",
+      "sizeKb": 18
+    },
+    {
+      "name": "seleksi-perusahaan-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/seleksi-perusahaan-excel",
+      "updatedAt": "2026-09-14T23:02:08Z",
+      "createdAt": "2026-09-14T23:01:59Z",
+      "sizeKb": 19
+    },
+    {
+      "name": "sem-dengan-variabel-intervening-amos",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "AMOS",
+      "applications": [
+        "AMOS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-dengan-variabel-intervening-amos",
+      "updatedAt": "2026-09-14T22:42:56Z",
+      "createdAt": "2026-09-14T22:42:45Z",
+      "sizeKb": 197
+    },
+    {
+      "name": "sem-in-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-in-smartpls",
+      "updatedAt": "2026-09-14T22:58:44Z",
+      "createdAt": "2026-09-14T22:58:33Z",
+      "sizeKb": 2015
+    },
+    {
+      "name": "sem-pls-in-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-pls-in-smartpls",
+      "updatedAt": "2026-09-14T22:59:04Z",
+      "createdAt": "2026-09-14T22:58:52Z",
+      "sizeKb": 1659
+    },
+    {
+      "name": "sem-pls-r",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-pls-r",
+      "updatedAt": "2026-09-14T22:58:54Z",
+      "createdAt": "2026-09-14T22:58:42Z",
+      "sizeKb": 8886
+    },
+    {
+      "name": "sem-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-smartpls",
+      "updatedAt": "2026-09-14T23:06:06Z",
+      "createdAt": "2026-09-14T22:36:19Z",
+      "sizeKb": 3021
+    },
+    {
+      "name": "sem-smartpls-2",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-smartpls-2",
+      "updatedAt": "2026-09-15T04:57:47Z",
+      "createdAt": "2026-09-15T04:57:34Z",
+      "sizeKb": 6778
+    },
+    {
+      "name": "sem-spss-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS, SmartPLS",
+      "applications": [
+        "SPSS",
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-spss-smartpls",
+      "updatedAt": "2026-09-14T12:22:30Z",
+      "createdAt": "2026-09-14T12:22:19Z",
+      "sizeKb": 1349
+    },
+    {
+      "name": "sem-spss-smartpls-2",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS, SmartPLS",
+      "applications": [
+        "SPSS",
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/sem-spss-smartpls-2",
+      "updatedAt": "2026-09-15T04:58:35Z",
+      "createdAt": "2026-09-15T04:58:25Z",
+      "sizeKb": 132
+    },
+    {
+      "name": "simple-linear-regression-in-excel",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/simple-linear-regression-in-excel",
+      "updatedAt": "2026-09-14T22:59:13Z",
+      "createdAt": "2026-09-14T22:59:02Z",
+      "sizeKb": 701
+    },
+    {
+      "name": "singular-spectrum-analysis-ssa-by-vector-forecasting-r",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/singular-spectrum-analysis-ssa-by-vector-forecasting-r",
+      "updatedAt": "2026-09-14T22:59:21Z",
+      "createdAt": "2026-09-14T22:59:11Z",
+      "sizeKb": 79
+    },
+    {
+      "name": "smartpls-4",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/smartpls-4",
+      "updatedAt": "2026-09-14T12:41:37Z",
+      "createdAt": "2026-09-14T12:41:26Z",
+      "sizeKb": 1055
+    },
+    {
+      "name": "strategi-pertahanan-darat-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/strategi-pertahanan-darat-excel",
+      "updatedAt": "2026-09-14T23:06:25Z",
+      "createdAt": "2026-09-14T22:59:36Z",
+      "sizeKb": 191
+    },
+    {
+      "name": "svm-dan-random-forest-data-genomatika-r",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/svm-dan-random-forest-data-genomatika-r",
+      "updatedAt": "2026-09-14T22:40:57Z",
+      "createdAt": "2026-09-14T22:40:46Z",
+      "sizeKb": 169
+    },
+    {
+      "name": "syntax-translation-r",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/syntax-translation-r",
+      "updatedAt": "2026-09-15T04:58:20Z",
+      "createdAt": "2026-09-15T04:58:10Z",
+      "sizeKb": 61
+    },
+    {
+      "name": "t-test-in-excel",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/t-test-in-excel",
+      "updatedAt": "2026-09-14T22:59:30Z",
+      "createdAt": "2026-09-14T22:59:19Z",
+      "sizeKb": 300
+    },
+    {
+      "name": "tabel-analisis-deskripsi-dan-frekuensi-r",
+      "methods": [
+        "Statistik deskriptif & pengolahan data",
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/tabel-analisis-deskripsi-dan-frekuensi-r",
+      "updatedAt": "2026-09-14T22:59:38Z",
+      "createdAt": "2026-09-14T22:59:28Z",
+      "sizeKb": 53
+    },
+    {
+      "name": "tabulasi-data-perusahaan-excel",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/tabulasi-data-perusahaan-excel",
+      "updatedAt": "2026-09-15T04:58:04Z",
+      "createdAt": "2026-09-15T04:57:53Z",
+      "sizeKb": 103
+    },
+    {
+      "name": "tabulasi-data-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/tabulasi-data-spss",
+      "updatedAt": "2026-09-14T23:06:09Z",
+      "createdAt": "2026-09-14T22:43:51Z",
+      "sizeKb": 11
+    },
+    {
+      "name": "text-classification-indobert-bertopic-python",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/text-classification-indobert-bertopic-python",
+      "updatedAt": "2026-09-14T23:06:13Z",
+      "createdAt": "2026-09-14T22:50:25Z",
+      "sizeKb": 95
+    },
+    {
+      "name": "three-box-method-excel",
+      "methods": [
+        "Kualitatif, literatur & penulisan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/three-box-method-excel",
+      "updatedAt": "2026-09-14T23:06:23Z",
+      "createdAt": "2026-09-14T22:58:10Z",
+      "sizeKb": 13
+    },
+    {
+      "name": "two-stage-least-square-r",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/two-stage-least-square-r",
+      "updatedAt": "2026-09-15T04:58:28Z",
+      "createdAt": "2026-09-15T04:58:18Z",
+      "sizeKb": 28
+    },
+    {
+      "name": "two-step-sem-stata",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "Stata",
+      "applications": [
+        "Stata"
+      ],
+      "language": "Stata",
+      "url": "https://github.com/juliyandi35/two-step-sem-stata",
+      "updatedAt": "2026-09-14T12:37:49Z",
+      "createdAt": "2026-09-14T12:37:37Z",
+      "sizeKb": 229
+    },
+    {
+      "name": "two-way-anova-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/two-way-anova-spss",
+      "updatedAt": "2026-09-14T23:00:14Z",
+      "createdAt": "2026-09-14T23:00:04Z",
+      "sizeKb": 79
+    },
+    {
+      "name": "uji-2-sampel-berpasangan-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-2-sampel-berpasangan-spss",
+      "updatedAt": "2026-09-14T23:00:23Z",
+      "createdAt": "2026-09-14T23:00:12Z",
+      "sizeKb": 6
+    },
+    {
+      "name": "uji-2-sampel-independen-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-2-sampel-independen-spss",
+      "updatedAt": "2026-09-14T23:06:30Z",
+      "createdAt": "2026-09-14T22:59:56Z",
+      "sizeKb": 9
+    },
+    {
+      "name": "uji-cross-sectional-cohort-eksperimental-validitas-dan-reliabilitas-spss",
+      "methods": [
+        "Uji hipotesis & rancangan eksperimen",
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-cross-sectional-cohort-eksperimental-validitas-dan-reliabilitas-spss",
+      "updatedAt": "2026-09-14T23:00:29Z",
+      "createdAt": "2026-09-14T23:00:19Z",
+      "sizeKb": 13
+    },
+    {
+      "name": "uji-mra-eviews",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-mra-eviews",
+      "updatedAt": "2026-09-15T04:58:43Z",
+      "createdAt": "2026-09-15T04:58:33Z",
+      "sizeKb": 75
+    },
+    {
+      "name": "uji-validitas-dan-reliabilitas-spss",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-validitas-dan-reliabilitas-spss",
+      "updatedAt": "2026-09-15T04:58:51Z",
+      "createdAt": "2026-09-15T04:58:41Z",
+      "sizeKb": 11
+    },
+    {
+      "name": "uji-validitas-smartpls",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "SmartPLS",
+      "applications": [
+        "SmartPLS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/uji-validitas-smartpls",
+      "updatedAt": "2026-09-14T22:40:47Z",
+      "createdAt": "2026-09-14T22:40:37Z",
+      "sizeKb": 85
+    },
+    {
+      "name": "univariate-bivariate-and-multivariate-test-in-spss",
+      "methods": [
+        "Statistik deskriptif & pengolahan data"
+      ],
+      "applicationRaw": "SPSS",
+      "applications": [
+        "SPSS"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/univariate-bivariate-and-multivariate-test-in-spss",
+      "updatedAt": "2026-09-14T22:49:10Z",
+      "createdAt": "2026-09-14T22:48:59Z",
+      "sizeKb": 264
+    },
+    {
+      "name": "validasi-regresi-ols-excel",
+      "methods": [
+        "Regresi, korelasi & ekonometrika"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/validasi-regresi-ols-excel",
+      "updatedAt": "2026-09-14T23:06:43Z",
+      "createdAt": "2026-09-14T22:37:05Z",
+      "sizeKb": 931
+    },
+    {
+      "name": "validitas-ai-dan-kurva-roc-r",
+      "methods": [
+        "SEM, pengukuran & psikometri"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/validitas-ai-dan-kurva-roc-r",
+      "updatedAt": "2026-09-14T22:47:28Z",
+      "createdAt": "2026-09-14T22:47:18Z",
+      "sizeKb": 131
+    },
+    {
+      "name": "var-in-r",
+      "methods": [
+        "Deret waktu & peramalan",
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/var-in-r",
+      "updatedAt": "2026-09-15T04:58:58Z",
+      "createdAt": "2026-09-15T04:58:49Z",
+      "sizeKb": 4
+    },
+    {
+      "name": "variogram-r",
+      "methods": [
+        "Spasial, geografis & GIS"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/variogram-r",
+      "updatedAt": "2026-09-15T04:59:07Z",
+      "createdAt": "2026-09-15T04:58:57Z",
+      "sizeKb": 8
+    },
+    {
+      "name": "vecm-eviews",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "EViews",
+      "applications": [
+        "EViews"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/vecm-eviews",
+      "updatedAt": "2026-09-14T12:39:34Z",
+      "createdAt": "2026-09-14T12:39:25Z",
+      "sizeKb": 45
+    },
+    {
+      "name": "visualisasi-rapidminer",
+      "methods": [
+        "Visualisasi, dashboard & presentasi"
+      ],
+      "applicationRaw": "RapidMiner",
+      "applications": [
+        "RapidMiner"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/visualisasi-rapidminer",
+      "updatedAt": "2026-09-15T04:59:11Z",
+      "createdAt": "2026-09-15T04:59:06Z",
+      "sizeKb": 0
+    },
+    {
+      "name": "volatility-analysis-r",
+      "methods": [
+        "Deret waktu & peramalan",
+        "Keuangan, biaya & risiko"
+      ],
+      "applicationRaw": "R / RStudio",
+      "applications": [
+        "R / RStudio"
+      ],
+      "language": "R",
+      "url": "https://github.com/juliyandi35/volatility-analysis-r",
+      "updatedAt": "2026-09-14T22:40:02Z",
+      "createdAt": "2026-09-14T22:39:51Z",
+      "sizeKb": 96
+    },
+    {
+      "name": "vrp-clark-wright-savings-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/vrp-clark-wright-savings-python",
+      "updatedAt": "2026-09-14T23:00:37Z",
+      "createdAt": "2026-09-14T23:00:27Z",
+      "sizeKb": 25
+    },
+    {
+      "name": "vrp-genetic-algorithm-python",
+      "methods": [
+        "MCDM, optimasi & riset operasi"
+      ],
+      "applicationRaw": "Python",
+      "applications": [
+        "Python"
+      ],
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/juliyandi35/vrp-genetic-algorithm-python",
+      "updatedAt": "2026-09-14T22:36:05Z",
+      "createdAt": "2026-09-14T22:35:55Z",
+      "sizeKb": 96
+    },
+    {
+      "name": "wavelet-coherence-analysis-excel",
+      "methods": [
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "Excel",
+      "applications": [
+        "Excel"
+      ],
+      "language": null,
+      "url": "https://github.com/juliyandi35/wavelet-coherence-analysis-excel",
+      "updatedAt": "2026-09-14T22:41:37Z",
+      "createdAt": "2026-09-14T22:41:26Z",
+      "sizeKb": 260
+    }
+  ]
+}

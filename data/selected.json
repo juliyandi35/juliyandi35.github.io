@@ -1,0 +1,78 @@
+[
+  {
+    "name": "analisis-spasial-dengan-r-dan-qgis",
+    "methods": [
+      "Spasial, geografis & GIS"
+    ],
+    "applicationRaw": "R / RStudio, QGIS",
+    "applications": [
+      "R / RStudio",
+      "QGIS"
+    ],
+    "language": "R",
+    "url": "https://github.com/juliyandi35/analisis-spasial-dengan-r-dan-qgis",
+    "updatedAt": "2026-09-14T22:38:14Z",
+    "createdAt": "2026-09-14T22:37:35Z",
+    "sizeKb": 87816
+  },
+  {
+    "name": "cleaning-5-million-data-in-stata",
+    "methods": [
+      "Statistik deskriptif & pengolahan data"
+    ],
+    "applicationRaw": "Stata",
+    "applications": [
+      "Stata"
+    ],
+    "language": "Stata",
+    "url": "https://github.com/juliyandi35/cleaning-5-million-data-in-stata",
+    "updatedAt": "2026-09-14T12:45:02Z",
+    "createdAt": "2026-09-14T12:44:20Z",
+    "sizeKb": 25760
+  },
+  {
+    "name": "forest-plot-r",
+    "methods": [
+      "Meta-analisis & sintesis bukti"
+    ],
+    "applicationRaw": "R / RStudio",
+    "applications": [
+      "R / RStudio"
+    ],
+    "language": "R",
+    "url": "https://github.com/juliyandi35/forest-plot-r",
+    "updatedAt": "2026-09-14T12:43:24Z",
+    "createdAt": "2026-09-14T12:43:04Z",
+    "sizeKb": 45793
+  },
+  {
+    "name": "jasp-glms",
+    "methods": [
+      "Regresi, korelasi & ekonometrika"
+    ],
+    "applicationRaw": "JASP",
+    "applications": [
+      "JASP"
+    ],
+    "language": "R",
+    "url": "https://github.com/juliyandi35/jasp-glms",
+    "updatedAt": "2026-09-14T12:31:15Z",
+    "createdAt": "2026-09-14T12:30:58Z",
+    "sizeKb": 12780
+  },
+  {
+    "name": "block-allocation-with-gurobi",
+    "methods": [
+      "MCDM, optimasi & riset operasi"
+    ],
+    "applicationRaw": "Gurobi",
+    "applications": [
+      "Gurobi"
+    ],
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/juliyandi35/block-allocation-with-gurobi",
+    "updatedAt": "2026-09-14T22:44:39Z",
+    "createdAt": "2026-09-14T22:44:29Z",
+    "sizeKb": 9
+  }
+]

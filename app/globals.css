@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-display: var(--font-space-grotesk), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f4f6f1;
+}
+
+body {
+  margin: 0;
+  background-color: theme("colors.porcelain");
+  color: theme("colors.ink");
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: theme("colors.oxide");
+  color: theme("colors.paper");
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  background: theme("colors.ink");
+  color: theme("colors.paper");
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  transition: top 200ms ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid theme("colors.oxide");
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.font-mono-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.hairline {
+  border-color: theme("colors.hairline");
+}
+
+/*
+ * Anchor targets sit under a sticky nav (see components/Nav.tsx, h-[64px]).
+ * Without this, a hash jump or focus scroll lands the section heading right
+ * under the nav bar instead of below it.
+ */
+#trajectory,
+#experience,
+#atlas,
+#formation,
+#contact,
+#graph {
+  scroll-margin-top: 80px;
+}
+
+.container-editorial {
+  width: 100%;
+  max-width: theme("maxWidth.editorial");
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-editorial {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
