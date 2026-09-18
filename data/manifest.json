@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16",
+  "generatedAt": "2026-09-18",
   "total": 301,
   "methodFamilies": [
     "Deret waktu & peramalan",
@@ -80,6 +80,8 @@
     "HTML": 3
   },
   "excludedLegacyRepos": [
+    "juliyandi35.github.io",
+    "new-portfolio-website",
     "Prediksi-Tindak-Pidan-Pencurian-dengan-K-NN",
     "Zero-Inflated-Poisson-with-Joint-Model"
   ],

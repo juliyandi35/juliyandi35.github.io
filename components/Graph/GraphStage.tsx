@@ -32,6 +32,15 @@ const GlobalCanvasClient = dynamic(() => import("@/components/Scene3D/GlobalCanv
  * until the visitor scrolls this far — nothing to hide behind other
  * sections in the first place.
  *
+ * The canvas only accepts pointer/wheel/touch input once the visitor has
+ * actually arrived (`arrived`, same threshold that makes nodes clickable in
+ * GlobalScene). Before that it stays `pointer-events-none`: during the
+ * approach, the page's own scroll must keep working normally, and a
+ * `pointer-events-none` ancestor is inherited by every descendant — including
+ * the WebGL canvas — so this is also what makes drag-to-orbit, scroll-to-zoom
+ * and node clicks work at all once arrived; without flipping it back to
+ * `pointer-events-auto` here, none of those would ever receive an event.
+ *
  * Scroll through the container maps to `arrival`: the first 45% is the
  * approach (the camera closes on the core, the canvas fades in), and the
  * remainder is dwell time, so the graph is not sliding away underneath the
@@ -81,7 +90,10 @@ export default function GraphStage() {
         <h2 className="sr-only">Project graph</h2>
 
         {webglSupported === true && (
-          <div className="pointer-events-none absolute inset-0" style={{ opacity: canvasOpacity }}>
+          <div
+            className={`absolute inset-0 ${arrived ? "pointer-events-auto touch-none" : "pointer-events-none"}`}
+            style={{ opacity: canvasOpacity }}
+          >
             <GlobalCanvasClient active={arrival > 0.001} reducedMotion={reducedMotion} />
           </div>
         )}
@@ -115,9 +127,11 @@ export default function GraphStage() {
               {/* The popup already covers this ground once a project is
                   selected — showing both risks the two stacking on top of
                   each other on narrow viewports, where they share the same
-                  bottom-left corner. */}
+                  bottom-left corner. Width is capped to match AppNav's own
+                  column (`sm:w-[15rem]`) so this caption never reads as wider
+                  than the button list sitting above it. */}
               {selectedProject === null && (
-                <div className="absolute inset-x-3 bottom-5 sm:inset-x-auto sm:left-6 sm:bottom-8 sm:max-w-xs">
+                <div className="absolute inset-x-3 bottom-5 sm:inset-x-auto sm:left-6 sm:bottom-8 sm:max-w-[15rem]">
                   {focused ? (
                     <p className="text-[12px] leading-relaxed text-graphite">
                       <span className="text-ink">{focused.name}</span> — {focused.count} projects.{" "}
@@ -130,9 +144,8 @@ export default function GraphStage() {
                     </p>
                   ) : (
                     <p className="text-[12px] leading-relaxed text-graphite">
-                      One core, {graph.applications.length} applications, {graph.projects.length} projects.
-                      Drag to look around, click a node to open its repository, or pick an
-                      application on the left.
+                      {graph.applications.length} applications, {graph.projects.length} projects.
+                      Drag to orbit, scroll or pinch to zoom, click a node to open it.
                     </p>
                   )}
                 </div>

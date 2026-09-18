@@ -116,6 +116,52 @@ repositories, one of the layers on the way in — is the full keyboard and
 screen-reader equivalent of clicking around the graph. Colour is never the
 only channel; every application dot has its name in text beside it.
 
+## Colour and texture are computed, too
+
+The page's base palette stays deliberately restrained — porcelain, paper and
+ink, with a single oxidised-green accent — but the richer colour on the page
+is never an arbitrary addition. It comes from the same data everything else
+here is built from, following the graph's own rule: compute it from the
+manifest, don't hand-pick it.
+
+- **`lib/graph.ts`'s `APP_COLORS`** (16 tones, one per application) now also
+  drives `components/Motifs/ApplicationSpectrum.tsx`, the proportional colour
+  bar in "Evidence at scale" — the same 16 colours, the same order, so that
+  section and the 3D graph are visibly the same dataset rather than two
+  different colour choices for the same numbers.
+- **`lib/methodPalette.ts`** does the equivalent for the 13 method families,
+  with a palette drawn from dyes long used in Nusantara textile tradition —
+  indigo (tarum), soga bark brown, kesumba/noni red, turmeric ochre, and so
+  on — assigned by real usage count, most-practiced family first. It colours
+  the method tabs, the chord diagram, and the woven texture below.
+- **`lib/motifs.ts`** generates three patterns as pure functions, the same
+  way `lib/graph.ts` generates the 3D layout — nothing here is a static
+  image asset:
+  - `parangLines` — repeating diagonal bands in the manner of "parang"
+    (broken-blade) batik, used as a tonal section-edge texture
+    (`components/Motifs/ParangDivider.tsx`) instead of a plain rule.
+  - `pilinSpiralPoints` — a paired spiral ("pilin", a motif from Toraja and
+    Minangkabau wood carving), drawn from the same family of self-similar
+    curves that space the graph's application nodes, sitting low-opacity
+    behind the hero copy (`components/Motifs/PilinSpiral.tsx`).
+  - `tenunThreads` — vertical thread weights sized by each method family's
+    real share of the catalog, rendered as a woven-cloth ("tenun") texture
+    (`components/Motifs/TenunTexture.tsx`) under the hero stats and along the
+    edge of the evidence section. The weave changes the moment the manifest
+    does.
+- **`lib/methodChord.ts`** turns `Repo.methods` — which allows up to two
+  entries per repository — into a real co-occurrence graph: an edge exists
+  only where a repository is genuinely tagged with both families at once.
+  `components/Motifs/MethodChord.tsx` draws it as a small chord diagram
+  beside the method tabs, and the strongest pairing is also stated in text
+  next to it, so the same fact is never colour-only.
+
+Every one of these is a plain Server Component (no hooks, no browser APIs),
+computed once at module load exactly like the graph, and every decorative
+element (`ParangDivider`, `PilinSpiral`, `TenunTexture`, the chord diagram's
+own SVG) is `aria-hidden`, because none of them carries information that
+isn't already stated in the surrounding text.
+
 ## Getting started
 
 ```bash
@@ -145,7 +191,7 @@ written back to `data/manifest.json`, and must never be committed.
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint (`next/core-web-vitals`) |
 | `npm run typecheck` | `tsc --noEmit` |
-| `npm run test` | Unit tests (Vitest): manifest parsing, atlas filtering, the graph's topology, and the camera framing maths |
+| `npm run test` | Unit tests (Vitest): manifest parsing, atlas filtering, the graph's topology, the camera framing maths, and the generative colour/motif data |
 | `npm run test:e2e` | Playwright smoke test: navigation, filtering, a repository link |
 
 ## Deploying
@@ -223,15 +269,21 @@ time, offline or not.
   and `e2e/` was syntax- and JSX-checked with `esbuild`; the
   framework-independent modules (`lib/data.ts`, `lib/content.ts`,
   `lib/manifestParser.ts`, `lib/methodGlosses.ts`, `lib/graph.ts`,
-  `lib/camera.ts`) were type-checked with `tsc --strict`; and `lib/graph.ts`
-  and `lib/camera.ts` were also *executed* directly with Node against the
-  real `data/manifest.json` — not merely statically analysed — to confirm the
-  topology and the framing maths hold against real data (306
+  `lib/camera.ts`, `lib/methodPalette.ts`, `lib/motifs.ts`,
+  `lib/methodChord.ts`) were type-checked with `tsc --strict`; and all of
+  `lib/graph.ts`, `lib/camera.ts`, `lib/methodPalette.ts`, `lib/motifs.ts`,
+  and `lib/methodChord.ts` were also *executed* directly with Node against
+  the real `data/manifest.json` — not merely statically analysed — to
+  confirm the topology and the framing maths hold against real data (306
   application-project memberships, the five dual-tool projects attached to
   both hubs, every application framed from outside its own cluster and never
   inside another's, the arrival distance inside the graph's fitting
-  distance). It follows standard, current APIs for Next.js 14, React Three
-  Fiber, GSAP ScrollTrigger, and Framer Motion throughout — but please run
+  distance, and — for the newer colour/motif modules — that every method
+  family gets a valid colour, the woven texture's thread weights sum to the
+  real repository count, and the chord diagram's 18 links reproduce, exactly,
+  the 35 repositories genuinely tagged with two method families at once). It
+  follows standard, current APIs for Next.js 14, React Three Fiber, GSAP
+  ScrollTrigger, and Framer Motion throughout — but please run
   `npm run typecheck`, `npm run lint`, and `npm run test` after your first
   `npm install`, and treat this section as the first thing to revisit if
   something doesn't compile.

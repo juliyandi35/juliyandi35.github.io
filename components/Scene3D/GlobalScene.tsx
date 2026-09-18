@@ -14,6 +14,17 @@ const LABEL_OFFSET = 1.75;
 const DRAG_SENSITIVITY = 0.0055;
 /** Pitch is clamped so the visitor can't spin the camera through the poles and lose orientation. */
 const MAX_PITCH = 1.1;
+/** How far a mouse wheel "tick" moves the zoom multiplier. */
+const WHEEL_ZOOM_SENSITIVITY = 0.0012;
+/**
+ * Zoom is a multiplier on whatever radius the current framing (the scroll
+ * approach or a focused application) already computed, clamped so a visitor
+ * can get meaningfully closer or farther without zooming through the core or
+ * out past the fog. 0.55 still keeps the camera outside the graph's own
+ * radius (~19 units) when zoomed all the way in from the arrival distance.
+ */
+const MIN_ZOOM = 0.55;
+const MAX_ZOOM = 2.1;
 
 const PROJECT_COUNT = graph.projects.length;
 const APP_COUNT = graph.applications.length;
@@ -34,6 +45,14 @@ const scratchSpherical = new THREE.Spherical();
 const DIM_TARGET = new THREE.Color(CORE_BACKDROP);
 /** Keeps the orbit just off the poles so it can't flip upside down mid-drag. */
 const POLE_GUARD = 0.05;
+
+function clampZoom(value: number): number {
+  return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, value));
+}
+
+function distanceBetween(a: { x: number; y: number }, b: { x: number; y: number }): number {
+  return Math.hypot(a.x - b.x, a.y - b.y);
+}
 
 /** Gentle logarithmic size encoding so repository size reads as a difference without becoming noise. */
 function projectScale(sizeKb: number): number {
@@ -57,6 +76,11 @@ export default function GlobalScene({ reducedMotion }: { reducedMotion: boolean 
   // just turns the camera around whichever point it is currently aimed at.
   const yawRef = useRef(0);
   const pitchRef = useRef(0);
+  // Zoom multiplier on the current framing's radius — mouse wheel on desktop,
+  // pinch (two active pointers moving apart/together) on touch. Independent
+  // of yaw/pitch, and applied even while an application is focused, unlike
+  // orbiting, which stays locked to that application's own framing.
+  const zoomRef = useRef(1);
   const draggingRef = useRef(false);
   const arrivedRef = useRef(false);
   const dragDistanceRef = useRef(0);
@@ -98,7 +122,7 @@ export default function GlobalScene({ reducedMotion }: { reducedMotion: boolean 
   // Drag-to-orbit: only armed once the visitor has actually arrived (the
   // same threshold that makes nodes clickable), so a drag never fights the
   // scroll-driven approach. Reduced-motion visitors keep node clicking but
-  // get no drag orbit, consistent with every other camera motion here.
+  // get no drag orbit or zoom, consistent with every other camera motion here.
   useEffect(() => {
     arrivedRef.current = arrival > 0.6;
   }, [arrival]);
@@ -106,53 +130,99 @@ export default function GlobalScene({ reducedMotion }: { reducedMotion: boolean 
   useEffect(() => {
     if (reducedMotion) return;
     const element = gl.domElement;
-    let lastX = 0;
-    let lastY = 0;
+    // Pointer Events unify mouse, pen and touch, so this map also carries
+    // pinch-to-zoom: a second simultaneous pointer means two fingers, and its
+    // distance-to-the-first-pointer replaces yaw/pitch dragging for as long
+    // as both stay down.
+    const activePointers = new Map<number, { x: number; y: number }>();
+    let pinchStartDistance: number | null = null;
+    let pinchStartZoom = 1;
 
     const onPointerDown = (event: PointerEvent) => {
       if (!arrivedRef.current) return;
-      draggingRef.current = true;
-      dragDistanceRef.current = 0;
-      lastX = event.clientX;
-      lastY = event.clientY;
+      activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
       element.setPointerCapture(event.pointerId);
+
+      if (activePointers.size === 1) {
+        draggingRef.current = true;
+        dragDistanceRef.current = 0;
+      } else if (activePointers.size === 2) {
+        draggingRef.current = false;
+        const [a, b] = [...activePointers.values()];
+        pinchStartDistance = distanceBetween(a!, b!);
+        pinchStartZoom = zoomRef.current;
+      }
     };
 
     const onPointerMove = (event: PointerEvent) => {
+      const previous = activePointers.get(event.pointerId);
+      if (!previous) return;
+      const current = { x: event.clientX, y: event.clientY };
+      activePointers.set(event.pointerId, current);
+
+      if (activePointers.size >= 2) {
+        const [a, b] = [...activePointers.values()];
+        const distance = distanceBetween(a!, b!);
+        if (pinchStartDistance !== null && pinchStartDistance > 1) {
+          // Fingers moving apart (distance grows) zooms in — the multiplier
+          // shrinks — matching the same pinch convention as maps and photos.
+          zoomRef.current = clampZoom(pinchStartZoom * (pinchStartDistance / distance));
+        }
+        return;
+      }
+
       if (!draggingRef.current) return;
-      const dx = event.clientX - lastX;
-      const dy = event.clientY - lastY;
-      lastX = event.clientX;
-      lastY = event.clientY;
+      const dx = current.x - previous.x;
+      const dy = current.y - previous.y;
       dragDistanceRef.current += Math.abs(dx) + Math.abs(dy);
       yawRef.current += dx * DRAG_SENSITIVITY;
       pitchRef.current = Math.min(MAX_PITCH, Math.max(-MAX_PITCH, pitchRef.current + dy * DRAG_SENSITIVITY));
     };
 
-    const endDrag = (event: PointerEvent) => {
-      if (!draggingRef.current) return;
-      draggingRef.current = false;
-      // A drag of any real distance should not also register as a node
-      // click once the pointer lifts — the browser still fires `click`
-      // after a drag unless something suppresses it.
-      if (dragDistanceRef.current > 6) {
-        suppressClickRef.current = true;
-        queueMicrotask(() => {
-          suppressClickRef.current = false;
-        });
-      }
+    const endPointer = (event: PointerEvent) => {
+      activePointers.delete(event.pointerId);
       if (element.hasPointerCapture(event.pointerId)) element.releasePointerCapture(event.pointerId);
+
+      if (activePointers.size < 2) pinchStartDistance = null;
+
+      if (activePointers.size === 0) {
+        // A drag of any real distance should not also register as a node
+        // click once the pointer lifts — the browser still fires `click`
+        // after a drag unless something suppresses it.
+        if (draggingRef.current && dragDistanceRef.current > 6) {
+          suppressClickRef.current = true;
+          queueMicrotask(() => {
+            suppressClickRef.current = false;
+          });
+        }
+        draggingRef.current = false;
+      } else if (activePointers.size === 1) {
+        // Lifted one of two pinching fingers: resume single-finger orbit
+        // fresh from here, rather than replaying the pinch's drag distance.
+        draggingRef.current = true;
+        dragDistanceRef.current = 0;
+      }
+    };
+
+    const onWheel = (event: WheelEvent) => {
+      if (!arrivedRef.current) return;
+      // The graph is the last thing on the page, so trading page scroll for
+      // zoom here never strands a visitor unable to reach content below it.
+      event.preventDefault();
+      zoomRef.current = clampZoom(zoomRef.current * (1 + event.deltaY * WHEEL_ZOOM_SENSITIVITY));
     };
 
     element.addEventListener("pointerdown", onPointerDown);
     element.addEventListener("pointermove", onPointerMove);
-    element.addEventListener("pointerup", endDrag);
-    element.addEventListener("pointercancel", endDrag);
+    element.addEventListener("pointerup", endPointer);
+    element.addEventListener("pointercancel", endPointer);
+    element.addEventListener("wheel", onWheel, { passive: false });
     return () => {
       element.removeEventListener("pointerdown", onPointerDown);
       element.removeEventListener("pointermove", onPointerMove);
-      element.removeEventListener("pointerup", endDrag);
-      element.removeEventListener("pointercancel", endDrag);
+      element.removeEventListener("pointerup", endPointer);
+      element.removeEventListener("pointercancel", endPointer);
+      element.removeEventListener("wheel", onWheel);
     };
   }, [gl, reducedMotion]);
 
@@ -222,19 +292,26 @@ export default function GlobalScene({ reducedMotion }: { reducedMotion: boolean 
     // entirely under reduced motion. The visitor's own drag (yaw/pitch,
     // accumulated by the pointer handlers above) always applies on top of
     // that drift, using three.js's own spherical coordinates rather than
-    // hand-rolled trig for the combined rotation.
+    // hand-rolled trig for the combined rotation. Zoom applies regardless of
+    // focus — spin and pitch stay locked to an application's own framing,
+    // but getting closer to or farther from it is always available.
     if (!focused && arrival > 0.95 && !reducedMotion && !draggingRef.current) {
       orbitRef.current += delta * 0.055;
     }
-    if (!focused && (orbitRef.current !== 0 || yawRef.current !== 0 || pitchRef.current !== 0)) {
+
+    const spinAngle = focused ? 0 : orbitRef.current + yawRef.current;
+    const pitchOffset = focused ? 0 : pitchRef.current;
+
+    if (spinAngle !== 0 || pitchOffset !== 0 || zoomRef.current !== 1) {
       scratchSpherical.setFromVector3(
         scratchObject.position.set(target.position[0], target.position[1], target.position[2]),
       );
-      scratchSpherical.theta += orbitRef.current + yawRef.current;
+      scratchSpherical.theta += spinAngle;
       scratchSpherical.phi = Math.min(
         Math.PI - POLE_GUARD,
-        Math.max(POLE_GUARD, scratchSpherical.phi - pitchRef.current),
+        Math.max(POLE_GUARD, scratchSpherical.phi - pitchOffset),
       );
+      scratchSpherical.radius *= zoomRef.current;
       scratchObject.position.setFromSpherical(scratchSpherical);
       target = {
         position: [scratchObject.position.x, scratchObject.position.y, scratchObject.position.z],

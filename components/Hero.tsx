@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { identity } from "@/lib/content";
 import { manifest } from "@/lib/data";
+import PilinSpiral from "@/components/Motifs/PilinSpiral";
+import TenunTexture from "@/components/Motifs/TenunTexture";
 
 export default function Hero() {
   return (
-    <section id="top" className="border-b hairline bg-porcelain pt-10 sm:pt-14">
-      <div className="container-editorial pb-14 lg:pb-20">
+    <section id="top" className="relative overflow-hidden border-b hairline bg-porcelain pt-10 sm:pt-14">
+      <PilinSpiral className="pointer-events-none absolute -right-28 -top-28 h-[380px] w-[380px] sm:-right-16 sm:-top-16 sm:h-[460px] sm:w-[460px]" />
+      <div className="container-editorial relative pb-14 lg:pb-20">
         <div className="max-w-2xl">
           <div className="mb-8 flex items-center gap-4">
             <Image
@@ -44,7 +47,7 @@ export default function Hero() {
               href="#contact"
               className="inline-flex min-h-[44px] items-center rounded-pill border hairline px-6 py-3 text-sm font-medium text-ink transition-colors duration-200 hover:border-oxide hover:text-oxide"
             >
-              Discuss a role
+              Contact
             </a>
           </div>
 
@@ -64,6 +67,8 @@ export default function Hero() {
               </dd>
             </div>
           </dl>
+
+          <TenunTexture className="mt-6 h-1.5 rounded-pill" />
         </div>
 
       </div>
