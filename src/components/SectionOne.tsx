@@ -43,12 +43,12 @@ export default function SectionOne() {
           </Reveal>
         </div>
 
-        <Reveal delay={420}>
-          <div className="rounded-[1.75rem] bg-white/15 p-1.5 ring-1 ring-white/25 backdrop-blur-xl">
+        <Reveal delay={420} className="shrink-0">
+          <div className="w-max rounded-[1.75rem] bg-white/15 p-1.5 ring-1 ring-white/25 backdrop-blur-xl">
             <div className="flex items-center gap-4 rounded-[calc(1.75rem-0.375rem)] bg-white/10 p-2 pr-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]">
               <img src="/portrait.jpg" alt={`Portrait of ${identity.name}`} className="h-24 w-20 rounded-[1.1rem] object-cover" />
               <div className="flex flex-col items-start gap-1">
-                <p className="text-sm font-medium text-white">{identity.name}</p>
+                <p className="whitespace-nowrap text-sm font-medium text-white">{identity.name}</p>
                 <p className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.15em] text-white/65">Mathematics · Data · AI</p>
                 <Cta href="#contact" tone="light" className="mt-2 py-1! pl-4! text-xs">
                   Get in touch
