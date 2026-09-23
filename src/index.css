@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  /* Deep slate pulled from the video's shadows — text colour for the bright sections. */
+  --color-ink: #16202b;
+  /* Pale blue-grey of the video's backdrop. */
+  --color-mist: #dfe7ee;
+  /* Spring-like settle: fast out, long soft landing. */
+  --ease-fluid: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Double-bezel glass: inner plate + spread-shadow tray, so cards read as machined hardware without extra DOM. */
+@utility glass {
+  border-radius: 1.75rem;
+  background-color: rgb(255 255 255 / 0.74);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    0 0 0 1px rgb(22 32 43 / 0.06),
+    0 0 0 7px rgb(255 255 255 / 0.32),
+    0 0 0 8px rgb(22 32 43 / 0.05),
+    0 40px 80px -40px rgb(22 32 43 / 0.22);
+}
+@utility glass-strong {
+  background-color: rgb(255 255 255 / 0.9);
+}
+@utility glass-ink {
+  background-color: rgb(22 32 43 / 0.07);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Paper grain: static SVG turbulence on a fixed layer, never on scrolling content. */
+.grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Native scroll-driven progress hairline; browsers without scroll timelines simply hide it. */
+.scroll-progress {
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+}
+@supports (animation-timeline: scroll()) {
+  .scroll-progress {
+    animation: progress-grow linear both;
+    animation-timeline: scroll(root);
+  }
+}
+@keyframes progress-grow {
+  to { transform: scaleX(1); }
+}
+
+@keyframes scrollcue {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+html,
+body {
+  background: var(--color-mist);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(22, 32, 43, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
