@@ -1,0 +1,782 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:title" content="Undangan Jalan-Jalan untuk Septi"><meta property="og:description" content="Pilih jam jemput dan kegiatan kita tanggal 3 Oktober ♥"></head><body style="margin:0">
+<title>Undangan Jalan-Jalan Septi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Press+Start+2P&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --sky: #6fe0f2;
+    --grid: rgba(20, 90, 110, 0.16);
+    --ink: #2f3a33;
+    --paper: #ffffff;
+    --lime: #c5e84b;
+    --leaf: #26b24b;
+    --leaf-dark: #1c8a39;
+    --pink: #ff8fb1;
+    --pink-soft: #ffd3e0;
+    --sun: #ffd65c;
+    --grass: #5cc85f;
+    --dirt: #d49a62;
+  }
+  html, body { height: 100%; }
+  body {
+    --dw: 170px; --dh: 200px;
+    background-color: var(--sky);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 22px 22px;
+    color: var(--ink);
+    font-family: "Pixelify Sans", ui-rounded, "Trebuchet MS", system-ui, sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+  }
+  .app {
+    position: relative;
+    height: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  .deco { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+  .cloud { position: absolute; image-rendering: pixelated; opacity: 0.95; animation: drift linear infinite; }
+  @keyframes drift { from { transform: translateX(110vw); } to { transform: translateX(-40vw); } }
+  .sparkle { position: absolute; image-rendering: pixelated; animation: twinkle 2.4s ease-in-out infinite; }
+  @keyframes twinkle { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.1); } }
+
+  main {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 16px;
+    padding-block: 20px 14px;
+  }
+  main > .panel { margin-block: auto; margin-inline: auto; }
+
+  .stage {
+    position: relative;
+    z-index: 3;
+    flex: none;
+    height: calc(var(--dh) + 40px);
+    transition: height .5s cubic-bezier(.4, 0, .2, 1);
+  }
+  .stage.center { height: calc(var(--dh) + 160px); }
+  .ground {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: calc(34px + env(safe-area-inset-bottom, 0px));
+    background: linear-gradient(var(--grass) 0 10px, #45a84a 10px 14px, var(--dirt) 14px);
+    border-top: 4px solid var(--ink);
+  }
+  .panel { width: 100%; max-width: 620px; display: grid; gap: 18px; justify-items: center; text-align: center; }
+  .eyebrow {
+    font-family: "Press Start 2P", monospace; font-size: 10px; letter-spacing: .08em;
+    background: var(--paper); border: 3px solid var(--ink); padding: 8px 10px;
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+  h1 {
+    margin: 0; font-weight: 700; line-height: 1.1;
+    font-size: clamp(34px, 9vw, 58px);
+    color: var(--paper);
+    text-shadow: 3px 0 var(--ink), -3px 0 var(--ink), 0 3px var(--ink), 0 -3px var(--ink), 4px 5px 0 var(--ink);
+    text-wrap: balance;
+  }
+  h1 .heart { color: var(--pink); }
+
+  .btn {
+    font-family: "Pixelify Sans", ui-rounded, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--ink);
+    background: var(--paper);
+    border: 4px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--ink);
+    padding: 14px 26px;
+    cursor: pointer;
+    transition: transform .08s, box-shadow .08s, background .15s;
+    min-height: 56px;
+  }
+  a.btn { display: inline-block; text-decoration: none; }
+  .btn:hover { transform: translate(-1px, -2px); box-shadow: 6px 7px 0 var(--ink); }
+  .btn:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--ink); }
+  .btn:focus-visible { outline: 4px dashed var(--pink); outline-offset: 4px; }
+  .btn.primary { background: var(--lime); }
+  .btn.pink { background: var(--pink-soft); }
+  .btn.big { font-size: 28px; padding: 16px 44px; }
+  .btn[disabled] { opacity: .45; cursor: default; transform: none; box-shadow: 5px 5px 0 var(--ink); }
+  .btn.chosen { background: var(--lime); opacity: 1; }
+
+  .choices { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; width: 100%; }
+  .time-btn { display: grid; gap: 2px; min-width: 150px; }
+  .time-btn .t { font-size: 38px; line-height: 1; }
+  .time-btn .s { font-size: 15px; font-weight: 400; }
+
+  .opt {
+    display: grid; justify-items: center; gap: 6px;
+    width: 172px; padding: 14px 12px 16px;
+  }
+  .opt canvas { width: 64px; height: 64px; image-rendering: pixelated; }
+  .opt .n { font-size: 21px; line-height: 1.1; }
+  .opt .s { font-size: 14px; font-weight: 400; line-height: 1.2; }
+
+  .schedule {
+    width: 100%;
+    background: var(--paper);
+    border: 4px solid var(--ink);
+    box-shadow: 6px 6px 0 var(--ink);
+    text-align: left;
+  }
+  .schedule-head {
+    background: var(--leaf); color: var(--paper);
+    padding: 10px 14px; border-bottom: 4px solid var(--ink);
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; align-items: baseline;
+  }
+  .schedule-head b { font-size: 22px; }
+  .schedule-head span { font-family: "Press Start 2P", monospace; font-size: 9px; letter-spacing: .06em; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 17px; }
+  th {
+    font-family: "Press Start 2P", monospace; font-size: 9px; letter-spacing: .06em;
+    text-align: left; padding: 10px 12px; background: var(--pink-soft); border-bottom: 3px solid var(--ink);
+  }
+  td { padding: 10px 12px; border-bottom: 2px dashed rgba(47, 58, 51, .25); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.time { white-space: nowrap; font-weight: 700; font-variant-numeric: tabular-nums; }
+  tr.star td { background: #f4fbd8; }
+  tr.star td:nth-child(2)::after { content: " ♥"; color: var(--pink); }
+  .place { color: var(--leaf-dark); font-weight: 600; }
+
+  .row-actions { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+  .row-actions.pair { flex-wrap: nowrap; width: 100%; max-width: 520px; gap: 12px; }
+  .row-actions.pair .btn { flex: 1 1 0; font-size: 20px; padding: 12px 10px; }
+  .note { font-size: 15px; margin: 0; max-width: 46ch; }
+
+  /* ---- Dino & balon ---- */
+  .dino-zone {
+    position: absolute;
+    left: 12px; bottom: calc(30px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(0);
+    transition: transform 2.2s cubic-bezier(.45, .05, .25, 1);
+    will-change: transform;
+  }
+  #dino { display: block; image-rendering: pixelated; width: var(--dw); height: var(--dh); }
+  .qmark {
+    position: absolute; left: 0; top: -14px;
+    font-family: "Press Start 2P", monospace; font-size: 26px; color: var(--paper);
+    text-shadow: 3px 0 var(--ink), -3px 0 var(--ink), 0 3px var(--ink), 0 -3px var(--ink);
+    animation: hop .7s steps(2) infinite;
+  }
+  @keyframes hop { 50% { transform: translateY(-6px) rotate(8deg); } }
+  .bubble {
+    box-sizing: border-box;
+    position: absolute; left: calc(var(--dw) + 12px); bottom: calc(var(--dh) * .28);
+    width: max-content; max-width: min(320px, calc(100vw - var(--dw) - 48px));
+    background: var(--paper);
+    border: 4px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--ink);
+    padding: 12px 14px;
+    font-size: 19px; font-weight: 600; line-height: 1.25;
+    animation: pop .25s steps(3);
+  }
+  .bubble:empty { display: none; }
+  .bubble::before {
+    content: ""; position: absolute; left: -16px; bottom: 10px;
+    width: 12px; height: 12px; background: var(--paper);
+    border-left: 4px solid var(--ink); border-bottom: 4px solid var(--ink);
+    box-shadow: -4px 4px 0 0 var(--paper);
+  }
+  .bubble::after {
+    content: ""; position: absolute; left: -24px; bottom: 2px; width: 8px; height: 8px;
+    background: var(--ink);
+  }
+  .dino-zone.center .bubble { left: 50%; transform: translateX(-50%); bottom: calc(var(--dh) + 14px); max-width: min(340px, calc(100vw - 32px)); }
+  .dino-zone.center .bubble::before, .dino-zone.center .bubble::after { display: none; }
+  @keyframes pop { from { transform: scale(.6); } to { transform: scale(1); } }
+  .dino-zone.center .bubble { animation: none; }
+  .caret { display: inline-block; width: .5em; animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .fade-in { animation: fadeIn .35s steps(4) both; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  .heart-fx { position: fixed; z-index: 4; image-rendering: pixelated; pointer-events: none; animation: floatUp linear forwards; }
+  @keyframes floatUp { 0% { transform: translateY(0); opacity: 1; } 75% { opacity: 1; } 100% { transform: translateY(-85vh); opacity: 0; } }
+
+  .side-card {
+    position: absolute; bottom: 18px; width: 150px; box-sizing: border-box;
+    background: var(--paper); border: 4px solid var(--ink); box-shadow: 5px 5px 0 var(--ink);
+    padding: 10px 8px; display: grid; justify-items: center; gap: 4px; text-align: center;
+    animation: pop .3s steps(3) both;
+  }
+  .side-card.left { right: calc(100% + 10px); }
+  .side-card.right { left: calc(100% + 10px); animation-delay: .15s; }
+  .side-card .lbl { font-family: "Press Start 2P", monospace; font-size: 8px; letter-spacing: .06em; }
+  .side-card .big { font-size: 34px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .side-card .nm { font-size: 18px; font-weight: 700; line-height: 1.1; }
+  .side-card canvas { width: 44px; height: 44px; image-rendering: pixelated; }
+  .overlay {
+    position: fixed; inset: 0; z-index: 10; background: rgba(34, 44, 38, .72);
+    display: grid; place-items: center; padding-inline: 16px; padding-block: 16px;
+  }
+  .sheet {
+    width: 100%; max-width: 420px; background: var(--sky); border: 4px solid var(--ink); box-shadow: 6px 6px 0 var(--ink);
+    padding: 14px; display: grid; gap: 12px; justify-items: center; text-align: center; box-sizing: border-box;
+  }
+  .sheet img { width: 100%; max-height: 52vh; object-fit: contain; border: 3px solid var(--ink); background: var(--paper); }
+  .sheet p { margin: 0; font-size: 16px; font-weight: 600; }
+  .sheet .row-actions { gap: 12px; }
+  .sheet .btn { font-size: 18px; padding: 10px 16px; min-height: 48px; }
+  .link-btn { background: none; border: 0; font: inherit; font-size: 15px; text-decoration: underline; color: var(--ink); cursor: pointer; }
+  @media (max-width: 520px) {
+    body { font-size: 17px; --dw: 119px; --dh: 140px; }
+    .qmark { font-size: 20px; }
+    .side-card { width: 112px; padding: 8px 6px; bottom: 8px; }
+    .side-card.left { right: calc(100% + 6px); }
+    .side-card.right { left: calc(100% + 6px); }
+    .side-card .big { font-size: 28px; }
+    .side-card .nm { font-size: 16px; }
+    .side-card .lbl { font-size: 7px; }
+    .bubble { font-size: 16px; padding: 10px 12px; }
+    .panel { gap: 14px; }
+    h1 { font-size: clamp(30px, 9vw, 44px); }
+    .btn.big { font-size: 24px; padding: 12px 32px; }
+    .choices { gap: 12px; }
+    .choices.times { flex-wrap: nowrap; }
+    .time-btn { min-width: 0; flex: 1 1 0; max-width: 170px; padding: 10px 8px; }
+    .time-btn .t { font-size: 32px; }
+    .time-btn .s { font-size: 14px; }
+    .opt { width: 100%; max-width: 340px; grid-template-columns: 44px 1fr; justify-items: start; text-align: left; align-items: center; column-gap: 12px; padding: 8px 12px; min-height: 0; }
+    .opt canvas { width: 44px; height: 44px; grid-row: span 2; }
+    .opt .n { font-size: 19px; }
+    .opt .s { font-size: 13px; }
+    .schedule-head { padding: 8px 10px; }
+    .schedule-head b { font-size: 18px; }
+    .schedule-head span { font-size: 7px; }
+    table { font-size: 13.5px; line-height: 1.25; }
+    th { font-size: 7px; padding: 7px 6px; }
+    td { padding: 6px 6px; }
+    td.time { font-size: 12.5px; }
+    .row-actions.pair .btn { font-size: 15px; padding: 10px 6px; min-height: 50px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cloud, .sparkle, .qmark { animation: none; }
+    .dino-zone { transition: none; }
+  }
+</style>
+
+<div class="app">
+  <div class="deco" id="deco" aria-hidden="true"></div>
+
+  <main id="content">
+    <div class="panel" id="panel" aria-live="polite"></div>
+  </main>
+
+  <div class="stage" id="stage">
+    <div class="ground" aria-hidden="true"></div>
+    <div class="dino-zone" id="dinoZone">
+      <div class="bubble" id="bubble" role="status"></div>
+      <canvas id="dino" width="34" height="40" aria-label="Dino hijau kecil yang lucu"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  // ===================== DINO PIXEL =====================
+  const GW = 34, GH = 40, OY = 2;
+  const COL = {
+    L: "#c5e84b", Y: "#dcf27f", G: "#26b24b", g: "#26b24b", O: "#333a33",
+    K: "#2b2b2b", W: "#ffffff", P: "#ff9fb8", T: "#ff5d86", B: "#8fd8ff",
+  };
+  const inE = (x, y, cx, cy, rx, ry) => {
+    const dx = (x + 0.5 - cx) / rx, dy = (y + 0.5 - cy) / ry;
+    return dx * dx + dy * dy <= 1;
+  };
+  const ARMS = {
+    down: [[6.5, 26, 2.8, 2.2], [25.8, 26, 2.2, 1.8]],
+    waveA: [[5.2, 20.5, 2, 3.2], [25.8, 26, 2.2, 1.8]],
+    waveB: [[4.2, 22.8, 3, 2.1], [25.8, 26, 2.2, 1.8]],
+    upA: [[5.2, 20, 2, 3.2], [27, 20, 2, 3.2]],
+    upB: [[5.8, 19, 2, 3.2], [26.4, 19, 2, 3.2]],
+  };
+  const SPIKES = [[13, 5.2, 2.4], [21, 6.6, 2.2], [26.8, 10.4, 2.2], [28.6, 14.8, 2.2], [28.2, 19.4, 2], [26.4, 23.3, 1.9]];
+  const cache = {};
+
+  function buildBody(armKey) {
+    if (cache[armKey]) return cache[armKey];
+    const g = new Array(GW * GH).fill(null);
+    const set = (x, y, v) => { if (x >= 0 && y >= 0 && x < GW && y < GH) g[y * GW + x] = v; };
+    const get = (x, y) => (x < 0 || y < 0 || x >= GW || y >= GH) ? null : g[y * GW + x];
+    for (let y = 0; y < GH - OY; y++) for (let x = 0; x < GW; x++) {
+      if (inE(x, y, 16, 15, 11.5, 9.5) || inE(x, y, 16, 26, 9, 8) ||
+          inE(x, y, 11, 33, 4, 3) || inE(x, y, 20.5, 33, 4, 3) || inE(x, y, 26.5, 30, 5.5, 2.6)) set(x, y, "L");
+    }
+    for (let y = 0; y < GH; y++) for (let x = 0; x < GW; x++) {
+      if (get(x, y) === "L" && inE(x, y, 15.5, 27.5, 5, 5)) set(x, y, "Y");
+      if (get(x, y) && x >= 31 && y >= 28) set(x, y, "G");
+    }
+    for (const [cx, cy, r] of SPIKES) for (let y = 0; y < GH; y++) for (let x = 0; x < GW; x++) if (inE(x, y, cx, cy, r, r)) set(x, y, "G");
+    for (const [cx, cy, rx, ry] of ARMS[armKey]) for (let y = 0; y < GH; y++) for (let x = 0; x < GW; x++) if (inE(x, y, cx, cy, rx, ry)) set(x, y, "G");
+    // bintik-bintik
+    [[19, 22], [20, 22], [21, 22], [17, 29], [18, 29], [10, 33], [11, 34], [21, 34], [22, 33]].forEach(([x, y]) => set(x, y, "g"));
+    // garis tepi
+    const out = g.slice();
+    for (let y = 0; y < GH; y++) for (let x = 0; x < GW; x++) {
+      const v = get(x, y);
+      const n = [get(x + 1, y), get(x - 1, y), get(x, y + 1), get(x, y - 1)];
+      if (!v && n.some(Boolean)) out[y * GW + x] = "O";
+      if ((v === "L" || v === "Y") && n.includes("G")) out[y * GW + x] = "O";
+    }
+    // kaki: garis pemisah
+    [[15, 34], [15, 35], [16, 35]].forEach(([x, y]) => { if (out[y * GW + x]) out[y * GW + x] = "O"; });
+    cache[armKey] = out;
+    return out;
+  }
+
+  function faceCells(face, blink) {
+    const c = [];
+    const put = (x, y, v) => c.push([x, y, v]);
+    const cheeks = () => { for (const x0 of [6, 23]) for (let x = x0; x < x0 + 3; x++) for (let y = 17; y <= 18; y++) put(x, y, "P"); };
+    if (face === "happy") {
+      [[9, 15], [10, 14], [11, 14], [12, 15], [19, 15], [20, 14], [21, 14], [22, 15]].forEach(([x, y]) => put(x, y, "K"));
+      for (let x = 13; x <= 18; x++) put(x, 17, "K");
+      put(13, 18, "K"); put(18, 18, "K");
+      for (let x = 14; x <= 17; x++) put(x, 18, "T");
+      for (let x = 14; x <= 17; x++) put(x, 19, "K");
+      cheeks();
+    } else if (face === "confused") {
+      [[10, 14], [11, 14], [10, 15], [11, 15]].forEach(([x, y]) => put(x, y, "K"));
+      put(11, 14, "W");
+      [[19, 14], [20, 14], [21, 14], [22, 14]].forEach(([x, y]) => put(x, y, "K"));
+      [[9, 12], [10, 11], [11, 11], [20, 11], [21, 11], [22, 12]].forEach(([x, y]) => put(x, y, "K"));
+      [[13, 18], [14, 17], [15, 18], [16, 17], [17, 18], [18, 17]].forEach(([x, y]) => put(x, y, "K"));
+      put(7, 11, "B"); put(7, 12, "B"); put(6, 12, "B");
+      cheeks();
+    } else {
+      if (blink) {
+        [[9, 15], [10, 15], [11, 15], [20, 15], [21, 15], [22, 15]].forEach(([x, y]) => put(x, y, "K"));
+      } else {
+        for (const x0 of [9, 20]) for (let x = x0; x < x0 + 3; x++) for (let y = 12; y <= 15; y++) put(x, y, "K");
+        put(10, 13, "W"); put(21, 13, "W"); put(11, 12, "W"); put(22, 12, "W");
+      }
+      put(14, 17, "K"); put(17, 17, "K"); put(15, 17, "T"); put(16, 17, "T"); put(15, 18, "K"); put(16, 18, "K");
+      cheeks();
+    }
+    return c;
+  }
+
+  const dCanvas = document.getElementById("dino");
+  const dctx = dCanvas.getContext("2d");
+  const dino = { mood: "normal", anim: "idle", t: 0, blinkT: 2.5, blink: 0 };
+
+  function drawDino(ctx, armKey, face, bounce, blink) {
+    ctx.clearRect(0, 0, GW, GH);
+    const g = buildBody(armKey);
+    const oy = OY - bounce;
+    for (let y = 0; y < GH; y++) for (let x = 0; x < GW; x++) {
+      const v = g[y * GW + x];
+      if (!v) continue;
+      ctx.fillStyle = COL[v];
+      ctx.fillRect(GW - 1 - x, y + oy, 1, 1);
+    }
+    for (const [x, y, v] of faceCells(face, blink)) { ctx.fillStyle = COL[v]; ctx.fillRect(GW - 1 - x, y + oy, 1, 1); }
+  }
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let last = performance.now();
+  function loop(now) {
+    const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    dino.t += dt;
+    dino.blinkT -= dt;
+    if (dino.blinkT <= 0) { dino.blink = 0.15; dino.blinkT = 2 + Math.random() * 3; }
+    if (dino.blink > 0) dino.blink -= dt;
+    const beat = Math.floor(dino.t / 0.32) % 2;
+    let arm = "down", bounce = 0;
+    if (dino.anim === "walk") { const st = Math.floor(dino.t / 0.16) % 2; arm = st ? "waveA" : "down"; bounce = reduce ? 0 : st; }
+    else if (dino.anim === "wave") { arm = beat ? "waveA" : "waveB"; bounce = reduce ? 0 : (Math.floor(dino.t / 0.64) % 2); }
+    else if (dino.anim === "cheer") { arm = beat ? "upA" : "upB"; bounce = reduce ? 0 : (beat ? 2 : 0); }
+    else { bounce = reduce ? 0 : (Math.floor(dino.t / 0.55) % 2); arm = (Math.floor(dino.t / 2.2) % 3 === 2) ? (beat ? "waveA" : "down") : "down"; }
+    drawDino(dctx, arm, dino.mood, bounce, dino.mood === "normal" && dino.blink > 0);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  // ===================== PIXEL ICON & DEKORASI =====================
+  function pixelImg(rows, pal, scale = 1) {
+    const c = document.createElement("canvas");
+    c.width = rows[0].length; c.height = rows.length;
+    const x = c.getContext("2d");
+    rows.forEach((r, j) => [...r].forEach((ch, i) => { if (ch !== ".") { x.fillStyle = pal[ch]; x.fillRect(i, j, 1, 1); } }));
+    return c;
+  }
+  const HEART = [".KK.KK.", "KPPKPPK", "KPWPPPK", "KPPPPPK", ".KPPPK.", "..KPK..", "...K..."];
+  const HEART_PAL = { K: "#333a33", P: "#ff8fb1", W: "#ffffff" };
+  const CLOUD = ["....KKKK......", "...KWWWWK.KK..", ".KKWWWWWWKWWK.", "KWWWWWWWWWWWWK", "KWWWWWWWWWWWWK", ".KKKKKKKKKKKK."];
+  const SPARK = ["..K..", "..Y..", "KYWYK", "..Y..", "..K.."];
+  const ICONS = {
+    parfum: { rows: [
+      "....KKKK....", "....KPPK....", "....KKKK....", "...KKKKKK...", "..KWBBBBBK..", ".KWBBBBBBBK.",
+      ".KBBBWWBBBK.", ".KBBWPPWBBK.", ".KBBBWWBBBK.", ".KBBBBBBBBK.", "..KBBBBBBK..", "...KKKKKK..."],
+      pal: { K: "#333a33", P: "#ff8fb1", B: "#b99cf0", W: "#ffffff" } },
+    buku: { rows: [
+      "............", ".KKKKK.KKKKK", "KWWWWWKWWWWK", "KWLLLWKWLLWK", "KWWWWWKWWWWK", "KWLLLWKWLLWK",
+      "KWWWWWKWWWWK", "KWLLWWKWLLLK", "KWWWWWKWWWWK", "KGGGGGKGGGGK", ".KKKKKKKKKK.", "......P....."],
+      pal: { K: "#333a33", W: "#fffbea", L: "#9aa39c", G: "#26b24b", P: "#ff8fb1" } },
+    bunga: { rows: [
+      "...KK..KK...", "..KPPKKPPK..", "..KPPYYPPK..", "...KYYYYK...", "..KPPYYPPK..", "..KPPKKPPK..",
+      "...KKGGKK...", ".KK..GG..KK.", "KGGK.GG.KGGK", ".KGGKGGKGGK.", "..KKKGGKKK..", "....KGGK...."],
+      pal: { K: "#333a33", P: "#ff8fb1", Y: "#ffd65c", G: "#26b24b" } },
+  };
+  const heartURL = pixelImg(HEART, HEART_PAL).toDataURL();
+
+  function buildDeco() {
+    const deco = document.getElementById("deco");
+    const cloudURL = pixelImg(CLOUD, { K: "#333a33", W: "#ffffff" }).toDataURL();
+    const sparkURL = pixelImg(SPARK, { K: "#ffffff", Y: "#ffd65c", W: "#ffffff" }).toDataURL();
+    [[8, 70, 0], [26, 95, -30], [44, 80, -55], [16, 120, -80]].forEach(([top, dur, delay], i) => {
+      const im = new Image(); im.src = cloudURL; im.className = "cloud";
+      const s = [6, 4, 5, 3][i];
+      im.style.cssText = `top:${top}%;width:${14 * s}px;height:${6 * s}px;animation-duration:${dur}s;animation-delay:${delay}s`;
+      deco.appendChild(im);
+    });
+    [[12, 12], [30, 86], [58, 8], [70, 92], [18, 60], [48, 72]].forEach(([top, left], i) => {
+      const im = new Image(); im.src = i % 2 ? heartURL : sparkURL; im.className = "sparkle";
+      im.style.cssText = `top:${top}%;left:${left}%;width:${i % 2 ? 21 : 20}px;animation-delay:${i * 0.4}s`;
+      deco.appendChild(im);
+    });
+  }
+  buildDeco();
+
+  function burstHearts(n = 24) {
+    for (let i = 0; i < n; i++) {
+      const im = new Image(); im.src = heartURL; im.className = "heart-fx";
+      const size = 14 + Math.round(Math.random() * 3) * 7;
+      im.style.cssText = `left:${Math.random() * 96}vw;bottom:${-10 - Math.random() * 20}px;width:${size}px;` +
+        `animation-duration:${3 + Math.random() * 3}s;animation-delay:${Math.random() * 1.8}s`;
+      document.body.appendChild(im);
+      setTimeout(() => im.remove(), 8000);
+    }
+  }
+
+  // ===================== DATA JADWAL =====================
+  const PLANS = {
+    parfum: { name: "Meracik Parfum", sub: "Racik wangi khas kamu", rows: [
+      ["breakfast", "10.45", "Sarapan roti & latte", "Perdipe Coffee"],
+      ["11.15", "12.45", "Makan siang", "Desa Palagan"],
+      ["13.15", "15.15", "Meracik parfum", "Wangi Lab", true],
+      ["15.45", "17.45", "Makan malam", "Epic Coffee"],
+      ["17.45", "18.00", "Diantar pulang", "Rumah Septi"],
+    ] },
+    buku: { name: "Membaca Buku", sub: "Ngopi & tukar buku", rows: [
+      ["breakfast", "10.45", "Sarapan pastry & latte", "Cinema Bakery"],
+      ["11.15", "12.45", "Makan siang", "Ndalem Klangenan"],
+      ["13.00", "16.15", "Membaca & tukar buku", "Buku Akik", true],
+      ["16.45", "17.50", "Makan malam", "Ayodhya Resto"],
+      ["17.50", "18.00", "Diantar pulang", "Rumah Septi"],
+    ] },
+    bunga: { name: "Merangkai Bunga", sub: "Rangkai buket sendiri", rows: [
+      ["breakfast", "10.45", "Sarapan pastry & latte", "Cinema Bakery"],
+      ["11.30", "12.45", "Makan siang", "Ayodhya Resto"],
+      ["13.15", "15.15", "Merangkai bunga", "Bebungaan Atelier", true],
+      ["15.45", "17.45", "Makan malam", "Joglo D'padma"],
+      ["17.45", "18.00", "Diantar pulang", "Rumah Septi"],
+    ] },
+  };
+  const state = { pickup: null, plan: null };
+  const plus20 = (t) => { const [h, m] = t.split(".").map(Number); const x = h * 60 + m + 20; return String(Math.floor(x / 60)).padStart(2, "0") + "." + String(x % 60).padStart(2, "0"); };
+
+  // ===================== BALON DIALOG =====================
+  const bubble = document.getElementById("bubble");
+  const zone = document.getElementById("dinoZone");
+  const stage = document.getElementById("stage");
+  function uncenter() {
+    zone.classList.remove("center"); stage.classList.remove("center");
+    zone.style.transition = "none"; zone.style.transform = "translateX(0)";
+    void zone.offsetWidth; zone.style.transition = "";
+    zone.querySelectorAll(".side-card").forEach((n) => n.remove());
+  }
+  function centerOffset() { return Math.max(0, stage.clientWidth / 2 - zone.offsetWidth / 2 - 12); }
+  window.addEventListener("resize", () => {
+    if (!zone.classList.contains("center")) return;
+    zone.style.transition = "none"; zone.style.transform = `translateX(${centerOffset()}px)`;
+    void zone.offsetWidth; zone.style.transition = "";
+  });
+  let typeTimer = null, qmark = null;
+  function say(text, done) {
+    clearInterval(typeTimer);
+    bubble.style.animation = "none"; void bubble.offsetWidth; bubble.style.animation = "";
+    if (reduce) { bubble.textContent = text; done && done(); return; }
+    const chars = [...text]; let i = 0;
+    bubble.innerHTML = '<span></span><span class="caret">▌</span>';
+    const span = bubble.firstChild;
+    typeTimer = setInterval(() => {
+      span.textContent += chars[i++] || "";
+      if (i >= chars.length) { clearInterval(typeTimer); bubble.querySelector(".caret")?.remove(); done && done(); }
+    }, 38);
+  }
+  function mood(m, anim = "idle") {
+    dino.mood = m; dino.anim = anim;
+    if (m === "confused" && !qmark) {
+      qmark = document.createElement("div"); qmark.className = "qmark"; qmark.textContent = "?"; qmark.setAttribute("aria-hidden", "true");
+      zone.appendChild(qmark);
+    } else if (m !== "confused" && qmark) { qmark.remove(); qmark = null; }
+  }
+
+  // ===================== HALAMAN =====================
+  const panel = document.getElementById("panel");
+  const el = (html) => { const d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; };
+  function clear() { panel.innerHTML = ""; }
+
+  function page0() {
+    clear(); uncenter();
+    mood("normal", "wave");
+    panel.append(el('<div class="eyebrow fade-in">SABTU · 3 OKTOBER 2026</div>'));
+    panel.append(el('<h1 class="fade-in">Undangan Jalan-Jalan <span class="heart">♥</span></h1>'));
+    say("Haii Septiii, ayo pilih opsi jalan-jalan nantii!!", () => {
+      const b = el('<button class="btn primary big fade-in" id="start" type="button">Mulai ▶</button>');
+      b.addEventListener("click", page1);
+      panel.append(b);
+    });
+  }
+
+  function page1() {
+    clear(); uncenter(); mood("confused");
+    panel.append(el('<div class="eyebrow fade-in">PILIHAN 1 DARI 2</div>'));
+    const wrap = el('<div class="choices times fade-in"></div>');
+    [["08.00", "Pagi-pagi ☀"], ["09.00", "Santai dulu ☁"]].forEach(([t, s]) => {
+      const b = el(`<button class="btn time-btn" type="button"><span class="t">${t}</span><span class="s">${s}</span></button>`);
+      b.addEventListener("click", () => {
+        state.pickup = t;
+        wrap.querySelectorAll("button").forEach((x) => { x.disabled = x !== b; });
+        b.classList.add("chosen");
+        mood("happy", "cheer");
+        say(`Okee, dijemput jam ${t} yaa`, () => {
+          const next = el('<button class="btn primary fade-in" type="button">Lanjut ▶</button>');
+          next.addEventListener("click", page2);
+          panel.append(next);
+        });
+      });
+      wrap.append(b);
+    });
+    say("Mau dijemput jam berapa?", () => panel.append(wrap));
+  }
+
+  function page2() {
+    clear(); uncenter(); mood("confused");
+    panel.append(el('<div class="eyebrow fade-in">PILIHAN 2 DARI 2</div>'));
+    const wrap = el('<div class="choices fade-in"></div>');
+    Object.entries(PLANS).forEach(([key, p]) => {
+      const b = el(`<button class="btn opt" type="button"><span class="n">${p.name}</span><span class="s">${p.sub}</span></button>`);
+      const icon = pixelImg(ICONS[key].rows, ICONS[key].pal);
+      b.prepend(icon);
+      b.addEventListener("click", () => {
+        state.plan = key;
+        wrap.querySelectorAll("button").forEach((x) => { x.disabled = x !== b; });
+        b.classList.add("chosen");
+        mood("happy", "cheer");
+        say("Okay, let's goo!!", () => {
+          const next = el('<button class="btn primary fade-in" type="button">Lihat jadwalnya ▶</button>');
+          next.addEventListener("click", page3);
+          panel.append(next);
+        });
+      });
+      wrap.append(b);
+    });
+    say("Mau kegiatan apa nanti?", () => panel.append(wrap));
+  }
+
+  function page3() {
+    clear(); mood("normal", "idle");
+    const p = PLANS[state.plan];
+    const rows = [["pickup", null, "Dijemput", "Rumah Septi"], ...p.rows].map((r) => {
+      let start = r[0], end = r[1];
+      if (start === "pickup") { start = state.pickup; end = plus20(state.pickup); }
+      if (start === "breakfast") start = plus20(state.pickup);
+      return `<tr class="${r[4] ? "star" : ""}"><td class="time">${start} – ${end}</td><td>${r[2]}</td><td class="place">${r[3]}</td></tr>`;
+    }).join("");
+    const card = el(`
+      <section class="schedule fade-in" aria-label="Jadwal jalan-jalan">
+        <div class="schedule-head"><b>${p.name}</b><span>SABTU, 3 OKT 2026</span></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>WAKTU</th><th>KEGIATAN</th><th>TEMPAT</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table></div>
+      </section>`);
+    const actions = el('<div class="row-actions pair fade-in"></div>');
+    const yes = el('<button class="btn primary" type="button">Setuju ♥</button>');
+    const other = el('<button class="btn pink" type="button">Mau liat yang lain dulu</button>');
+    yes.addEventListener("click", finale);
+    other.addEventListener("click", page2);
+    actions.append(yes, other);
+    panel.append(card);
+    say("Ini jadwal kita nantiii", () => panel.append(actions));
+  }
+
+  const FINAL_TEXT = "Yeyyy, setuju yaaa, sampai ketemu tanggal 3 ❤️";
+
+  function finale() {
+    clear();
+    clearInterval(typeTimer);
+    bubble.textContent = "";
+    zone.querySelectorAll(".side-card").forEach((n) => n.remove());
+    const p = PLANS[state.plan];
+    mood("happy", "walk");
+    stage.classList.add("center");
+    zone.classList.add("center");
+    zone.style.transform = `translateX(${centerOffset()}px)`;
+    let arrived = false;
+    const arrive = () => {
+      if (arrived) return; arrived = true;
+      zone.removeEventListener("transitionend", onEnd);
+      mood("happy", "cheer");
+      burstHearts();
+      const left = el(`<div class="side-card left"><span class="lbl">DIJEMPUT</span><span class="big">${state.pickup}</span><span class="nm">WIB</span></div>`);
+      const right = el(`<div class="side-card right"><span class="lbl">KEGIATAN</span><span class="nm">${p.name}</span></div>`);
+      right.insertBefore(pixelImg(ICONS[state.plan].rows, ICONS[state.plan].pal), right.children[1]);
+      zone.append(left, right);
+      say(FINAL_TEXT, () => {
+        panel.append(el('<div class="eyebrow fade-in">JAWABAN SEPTI ♥</div>'));
+        const send = el('<button class="btn primary big fade-in" type="button" id="send">Kirim ke Juli ✉</button>');
+        send.addEventListener("click", () => sendToJuli(send));
+        panel.append(send);
+        const redo = el('<button class="link-btn fade-in" type="button">Ubah pilihan</button>');
+        redo.addEventListener("click", page1);
+        panel.append(redo);
+      });
+    };
+    const onEnd = (e) => { if (e.target === zone && e.propertyName === "transform") arrive(); };
+    zone.addEventListener("transitionend", onEnd);
+    setTimeout(arrive, reduce ? 0 : 2400);
+  }
+
+  function wrapText(ctx, text, maxW) {
+    const words = text.split(" "); const lines = []; let line = "";
+    for (const w of words) {
+      const test = line ? line + " " + w : w;
+      if (ctx.measureText(test).width > maxW && line) { lines.push(line); line = w; } else line = test;
+    }
+    if (line) lines.push(line);
+    return lines;
+  }
+  function box(ctx, x, y, w, h, fill, b = 8) {
+    ctx.fillStyle = "#333a33"; ctx.fillRect(x + b, y + b, w, h);
+    ctx.fillRect(x, y, w, h);
+    ctx.fillStyle = fill; ctx.fillRect(x + b, y + b, w - 2 * b, h - 2 * b);
+  }
+
+  async function makeCard() {
+    try { await document.fonts.ready; } catch (e) {}
+    const W = 1080, H = 1350;
+    const c = document.createElement("canvas"); c.width = W; c.height = H;
+    const x = c.getContext("2d");
+    x.imageSmoothingEnabled = false;
+    const FONT = '"Pixelify Sans", ui-rounded, "Trebuchet MS", sans-serif';
+    x.fillStyle = "#6fe0f2"; x.fillRect(0, 0, W, H);
+    x.fillStyle = "rgba(20,90,110,0.16)";
+    for (let i = 0; i < W; i += 40) x.fillRect(i, 0, 2, H);
+    for (let j = 0; j < H; j += 40) x.fillRect(0, j, W, 2);
+    // tanah
+    x.fillStyle = "#333a33"; x.fillRect(0, H - 110, W, 8);
+    x.fillStyle = "#5cc85f"; x.fillRect(0, H - 102, W, 28);
+    x.fillStyle = "#45a84a"; x.fillRect(0, H - 74, W, 10);
+    x.fillStyle = "#d49a62"; x.fillRect(0, H - 64, W, 64);
+    // hati
+    const heart = pixelImg(HEART, HEART_PAL);
+    [[70, 60, 8], [940, 110, 10], [120, 330, 7], [900, 360, 8], [470, 300, 5], [620, 400, 6]].forEach(([hx, hy, sc]) => x.drawImage(heart, hx, hy, 7 * sc, 7 * sc));
+    // judul
+    x.textAlign = "center"; x.textBaseline = "middle";
+    box(x, 330, 60, 420, 64, "#ffffff", 6);
+    x.fillStyle = "#333a33"; x.font = `600 30px ${FONT}`; x.fillText("SABTU · 3 OKTOBER 2026", 540, 94);
+    x.font = `700 92px ${FONT}`; x.lineJoin = "round"; x.lineWidth = 16; x.strokeStyle = "#333a33";
+    x.strokeText("Jawaban Septi", 540, 200); x.fillStyle = "#ffffff"; x.fillText("Jawaban Septi", 540, 200);
+    // balon
+    x.font = `700 50px ${FONT}`;
+    const lines = wrapText(x, FINAL_TEXT, 720);
+    const bh = 60 + lines.length * 62;
+    box(x, 150, 500, 780, bh, "#ffffff", 8);
+    x.fillStyle = "#333a33"; lines.forEach((l, i) => x.fillText(l, 540, 500 + 38 + 31 + i * 62));
+    const ty = 500 + bh;
+    x.fillStyle = "#333a33"; x.fillRect(516, ty, 48, 16); x.fillRect(524, ty + 16, 32, 16); x.fillRect(532, ty + 32, 16, 12);
+    x.fillStyle = "#ffffff"; x.fillRect(524, ty - 8, 32, 16); x.fillRect(532, ty + 8, 16, 12);
+    // dino
+    const sp = document.createElement("canvas"); sp.width = GW; sp.height = GH;
+    drawDino(sp.getContext("2d"), "upA", "happy", 0, false);
+    const sc = 12, dw = GW * sc, dh = GH * sc;
+    x.drawImage(sp, (W - dw) / 2, H - 104 - dh, dw, dh);
+    // kartu kiri & kanan
+    const cy = H - 104 - 300, cw = 260, ch = 280;
+    box(x, 36, cy, cw, ch, "#ffffff", 8);
+    box(x, W - 36 - cw - 8, cy, cw, ch, "#ffffff", 8);
+    x.fillStyle = "#333a33";
+    x.font = `600 30px ${FONT}`; x.fillText("DIJEMPUT", 36 + cw / 2 + 4, cy + 50);
+    x.font = `700 96px ${FONT}`; x.fillText(state.pickup, 36 + cw / 2 + 4, cy + 145);
+    x.font = `700 36px ${FONT}`; x.fillText("WIB", 36 + cw / 2 + 4, cy + 225);
+    const rx = W - 36 - cw - 8 + cw / 2 + 4;
+    x.font = `600 30px ${FONT}`; x.fillText("KEGIATAN", rx, cy + 50);
+    const ic = pixelImg(ICONS[state.plan].rows, ICONS[state.plan].pal);
+    x.drawImage(ic, rx - 48, cy + 78, 96, 96);
+    x.font = `700 38px ${FONT}`;
+    wrapText(x, PLANS[state.plan].name, cw - 40).forEach((l, i) => x.fillText(l, rx, cy + 205 + i * 40));
+    return c;
+  }
+
+  let downloadsNS = null;
+  (async () => { try { downloadsNS = await window.claude?.use?.("downloads"); } catch (e) { downloadsNS = null; } })();
+
+  async function sendToJuli(btn) {
+    const label = btn.textContent;
+    btn.disabled = true; btn.textContent = "Menyiapkan gambar…";
+    const p = PLANS[state.plan];
+    const msg = `Haii Juli! Aku setuju ya: dijemput jam ${state.pickup}, kegiatannya ${p.name}. Sampai ketemu tanggal 3! ❤️`;
+    let blob = null;
+    try {
+      const card = await makeCard();
+      blob = await new Promise((r) => card.toBlob(r, "image/png"));
+    } catch (e) { blob = null; }
+    btn.disabled = false; btn.textContent = label;
+    if (blob) {
+      const file = new File([blob], "jawaban-septi.png", { type: "image/png" });
+      try {
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], text: msg });
+          return;
+        }
+      } catch (e) {
+        if (e && e.name === "AbortError") return;
+      }
+    }
+    showSheet(blob, msg);
+  }
+
+  function showSheet(blob, msg) {
+    const url = blob ? URL.createObjectURL(blob) : "";
+    const ov = el(`<div class="overlay" role="dialog" aria-modal="true" aria-label="Kirim ke Juli">
+      <div class="sheet">
+        ${blob ? `<img alt="Gambar jawaban Septi" src="${url}">` : ""}
+        <p>${blob ? "Simpan gambarnya dulu (atau tekan lama gambarnya), lalu kirim ke Juli di WhatsApp ya!" : "Gambarnya gagal dibuat, tapi pesannya tetap bisa dikirim lewat WhatsApp."}</p>
+        <div class="row-actions"></div>
+        <button class="link-btn" type="button">Tutup</button>
+      </div></div>`);
+    const actions = ov.querySelector(".row-actions");
+    if (blob && downloadsNS) {
+      const save = el('<button class="btn pink" type="button">Simpan gambar ⬇</button>');
+      save.addEventListener("click", async () => {
+        try { await downloadsNS.save({ filename: "jawaban-septi.png", data: blob }); save.textContent = "Tersimpan ✔"; }
+        catch (e) { if (e && (e.code === "unavailable" || e.code === "not_granted")) save.remove(); }
+      });
+      actions.append(save);
+    }
+    const wa = el(`<a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(msg)}">Buka WhatsApp ✉</a>`);
+    actions.append(wa);
+    ov.querySelector(".link-btn").addEventListener("click", () => { ov.remove(); if (url) URL.revokeObjectURL(url); });
+    document.body.append(ov);
+  }
+
+  page0();
+})();
+</script>
+</body></html>
