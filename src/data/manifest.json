@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-09-28",
-  "total": 302,
+  "total": 303,
   "methodFamilies": [
     "Deret waktu & peramalan",
     "Keuangan, biaya & risiko",
@@ -23,7 +23,7 @@
     "MCDM, optimasi & riset operasi": 33,
     "Statistik deskriptif & pengolahan data": 31,
     "Uji hipotesis & rancangan eksperimen": 24,
-    "Machine learning, AI & data mining": 49,
+    "Machine learning, AI & data mining": 50,
     "Spasial, geografis & GIS": 19,
     "Kualitatif, literatur & penulisan": 12,
     "SEM, pengukuran & psikometri": 22,
@@ -42,6 +42,7 @@
     "Mendeley",
     "Minitab",
     "Python",
+    "Python, Flask, React",
     "Python, Flask, Ollama",
     "Python, Gurobi",
     "QGIS",
@@ -59,7 +60,7 @@
     "Excel": 46,
     "JASP": 3,
     "SPSS": 55,
-    "Python": 33,
+    "Python": 34,
     "QGIS": 3,
     "Minitab": 2,
     "Gurobi": 3,
@@ -70,15 +71,16 @@
     "SmartPLS": 10,
     "Maple": 1,
     "AMOS": 1,
-    "Flask": 1,
-    "Ollama": 1
+    "Flask": 2,
+    "Ollama": 1,
+    "React": 1
   },
   "languageCounts": {
     "R": 100,
     "MATLAB": 13,
     "None": 139,
     "Jupyter Notebook": 23,
-    "Python": 6,
+    "Python": 7,
     "Stata": 17,
     "HTML": 3,
     "JavaScript": 1
@@ -90,7 +92,6 @@
     "new-portfolio-website",
     "output-claude-code",
     "Prediksi-Tindak-Pidan-Pencurian-dengan-K-NN",
-    "SATRIA-2.0",
     "seminar-hasil-tesis-yonif412-motion",
     "tutorial-hardening-ubuntu",
     "Zero-Inflated-Poisson-with-Joint-Model"
@@ -3984,6 +3985,23 @@
       "updatedAt": "2026-09-14T22:36:41Z",
       "createdAt": "2026-09-14T22:36:29Z",
       "sizeKb": 3654
+    },
+    {
+      "name": "SATRIA-2.0",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python, Flask, React",
+      "applications": [
+        "Python",
+        "Flask",
+        "React"
+      ],
+      "language": "Python",
+      "url": "https://github.com/juliyandi35/SATRIA-2.0",
+      "updatedAt": "2026-09-28T02:49:59Z",
+      "createdAt": "2026-09-28T02:49:42Z",
+      "sizeKb": 0
     },
     {
       "name": "sarima-and-sarimax-r",
