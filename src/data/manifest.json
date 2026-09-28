@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-18",
-  "total": 301,
+  "generatedAt": "2026-09-28",
+  "total": 302,
   "methodFamilies": [
     "Deret waktu & peramalan",
     "Keuangan, biaya & risiko",
@@ -23,7 +23,7 @@
     "MCDM, optimasi & riset operasi": 33,
     "Statistik deskriptif & pengolahan data": 31,
     "Uji hipotesis & rancangan eksperimen": 24,
-    "Machine learning, AI & data mining": 48,
+    "Machine learning, AI & data mining": 49,
     "Spasial, geografis & GIS": 19,
     "Kualitatif, literatur & penulisan": 12,
     "SEM, pengukuran & psikometri": 22,
@@ -42,6 +42,7 @@
     "Mendeley",
     "Minitab",
     "Python",
+    "Python, Flask, Ollama",
     "Python, Gurobi",
     "QGIS",
     "R / RStudio",
@@ -58,7 +59,7 @@
     "Excel": 46,
     "JASP": 3,
     "SPSS": 55,
-    "Python": 32,
+    "Python": 33,
     "QGIS": 3,
     "Minitab": 2,
     "Gurobi": 3,
@@ -68,7 +69,9 @@
     "RapidMiner": 2,
     "SmartPLS": 10,
     "Maple": 1,
-    "AMOS": 1
+    "AMOS": 1,
+    "Flask": 1,
+    "Ollama": 1
   },
   "languageCounts": {
     "R": 100,
@@ -77,12 +80,19 @@
     "Jupyter Notebook": 23,
     "Python": 6,
     "Stata": 17,
-    "HTML": 3
+    "HTML": 3,
+    "JavaScript": 1
   },
   "excludedLegacyRepos": [
+    "belajar-r-kelas",
+    "jalan-jalan-jogja",
     "juliyandi35.github.io",
     "new-portfolio-website",
+    "output-claude-code",
     "Prediksi-Tindak-Pidan-Pencurian-dengan-K-NN",
+    "SATRIA-2.0",
+    "seminar-hasil-tesis-yonif412-motion",
+    "tutorial-hardening-ubuntu",
     "Zero-Inflated-Poisson-with-Joint-Model"
   ],
   "repos": [
@@ -4564,6 +4574,23 @@
       "updatedAt": "2026-09-14T12:39:34Z",
       "createdAt": "2026-09-14T12:39:25Z",
       "sizeKb": 45
+    },
+    {
+      "name": "VERA-2.0",
+      "methods": [
+        "Machine learning, AI & data mining"
+      ],
+      "applicationRaw": "Python, Flask, Ollama",
+      "applications": [
+        "Python",
+        "Flask",
+        "Ollama"
+      ],
+      "language": "JavaScript",
+      "url": "https://github.com/juliyandi35/VERA-2.0",
+      "updatedAt": "2026-09-28T02:55:14Z",
+      "createdAt": "2026-09-28T02:54:44Z",
+      "sizeKb": 0
     },
     {
       "name": "visualisasi-rapidminer",
