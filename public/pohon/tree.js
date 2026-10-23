@@ -406,6 +406,7 @@ function summary() {
   const tools = Object.keys(TC).filter(t => t !== 'Lainnya').sort((a, b) => countBy(b) - countBy(a));
   const active = REPOS.filter(r => r.age < 90).length, mb = REPOS.reduce((s, r) => s + r.z, 0) / 1024;
   document.querySelectorAll('[data-count]').forEach(e => e.textContent = REPOS.length);
+  if (typeof D_DATE === 'string') $('snap').textContent = `Data dari GitHub API, diperbarui ${fmtDate(D_DATE)}`;
   $('nCat').textContent = CATS.length;
   $('facts').textContent = `${CATS[0].name} jadi cabang paling rimbun dengan ${CATS[0].list.length} repo, disusul ${CATS[1].name} (${CATS[1].list.length}). `
     + `${tools[0]} dipakai di ${countBy(tools[0])} repo, ${tools[1]} di ${countBy(tools[1])}, ${tools[2]} di ${countBy(tools[2])}. `

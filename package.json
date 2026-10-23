@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "pohon:data": "node scripts/pohon-data.mjs",
+    "build": "node scripts/pohon-data.mjs && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
