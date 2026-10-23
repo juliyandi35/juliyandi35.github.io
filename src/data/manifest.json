@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-28",
-  "total": 303,
+  "generatedAt": "2026-10-23",
+  "total": 304,
   "methodFamilies": [
     "Deret waktu & peramalan",
     "Keuangan, biaya & risiko",
@@ -19,7 +19,7 @@
   "methodCounts": {
     "Regresi, korelasi & ekonometrika": 80,
     "Pemodelan matematis, numerik & kendali": 14,
-    "Deret waktu & peramalan": 27,
+    "Deret waktu & peramalan": 28,
     "MCDM, optimasi & riset operasi": 33,
     "Statistik deskriptif & pengolahan data": 31,
     "Uji hipotesis & rancangan eksperimen": 24,
@@ -27,7 +27,7 @@
     "Spasial, geografis & GIS": 19,
     "Kualitatif, literatur & penulisan": 12,
     "SEM, pengukuran & psikometri": 22,
-    "Keuangan, biaya & risiko": 9,
+    "Keuangan, biaya & risiko": 10,
     "Visualisasi, dashboard & presentasi": 11,
     "Meta-analisis & sintesis bukti": 6
   },
@@ -44,6 +44,7 @@
     "Python",
     "Python, Flask, React",
     "Python, Flask, Ollama",
+    "Python, Flask, React, Ollama",
     "Python, Gurobi",
     "QGIS",
     "R / RStudio",
@@ -60,7 +61,7 @@
     "Excel": 46,
     "JASP": 3,
     "SPSS": 55,
-    "Python": 34,
+    "Python": 35,
     "QGIS": 3,
     "Minitab": 2,
     "Gurobi": 3,
@@ -71,9 +72,9 @@
     "SmartPLS": 10,
     "Maple": 1,
     "AMOS": 1,
-    "Flask": 2,
-    "Ollama": 1,
-    "React": 1
+    "Flask": 3,
+    "Ollama": 2,
+    "React": 2
   },
   "languageCounts": {
     "R": 100,
@@ -83,7 +84,8 @@
     "Python": 7,
     "Stata": 17,
     "HTML": 3,
-    "JavaScript": 1
+    "JavaScript": 1,
+    "TypeScript": 1
   },
   "excludedLegacyRepos": [
     "belajar-r-kelas",
@@ -640,6 +642,25 @@
       "updatedAt": "2026-09-14T12:36:32Z",
       "createdAt": "2026-09-14T12:36:21Z",
       "sizeKb": 654
+    },
+    {
+      "name": "ARTHA",
+      "methods": [
+        "Keuangan, biaya & risiko",
+        "Deret waktu & peramalan"
+      ],
+      "applicationRaw": "Python, Flask, React, Ollama",
+      "applications": [
+        "Python",
+        "Flask",
+        "React",
+        "Ollama"
+      ],
+      "language": "TypeScript",
+      "url": "https://github.com/juliyandi35/ARTHA",
+      "updatedAt": "2026-10-23T04:13:36Z",
+      "createdAt": "2026-10-23T04:13:20Z",
+      "sizeKb": 0
     },
     {
       "name": "artificial-neural-network-r",
