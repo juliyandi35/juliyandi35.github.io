@@ -2,9 +2,8 @@ import { ArrowUpRight } from 'lucide-react'
 import Cta from './Cta'
 import Reveal from './Reveal'
 import Section from './Section'
-import NetworkGraph from './NetworkGraph'
 import MethodMatrix from './MethodMatrix'
-import { appColor, graph, manifest, selected, titleFromName, type Repo } from '../data/projects'
+import { appColor, manifest, selected, titleFromName, type Repo } from '../data/projects'
 import { glossOf } from '../data/profile'
 
 const describe = (r: Repo) =>
@@ -102,11 +101,29 @@ export default function Projects() {
       </div>
 
       <Sub
-        title="The project network"
-        note={`${graph.projects.length} projects orbiting ${graph.apps.length} applications. Drag to spin, click a hub to focus, click a node to open the repository.`}
+        title="The project tree"
+        note="Every public repository grown into one tree. Branches follow the field of analysis, leaves follow the tool."
       />
       <Reveal>
-        <NetworkGraph />
+        <a
+          href="/pohon/"
+          className="group grid overflow-hidden glass glass-strong transition-colors duration-500 ease-fluid hover:bg-white/90 lg:grid-cols-[1fr_1.5fr]"
+        >
+          <div className="flex flex-col justify-between gap-8 p-8 sm:p-10">
+            <p className="max-w-sm text-ink/70">
+              Zoom into the canopy, filter by tool or field, and open any repository straight from its leaf.
+            </p>
+            <Cta as="span" className="self-start">Jelajahi Pohon</Cta>
+          </div>
+          <img
+            src="/pohon/preview.webp"
+            alt="Preview of the project tree: a slate trunk whose leaves are coloured by analysis tool"
+            width={1200}
+            height={656}
+            loading="lazy"
+            className="h-60 w-full bg-[#dfe7ee] object-contain transition-transform duration-700 ease-fluid group-hover:scale-[1.03] sm:h-72"
+          />
+        </a>
       </Reveal>
 
       <Sub title="Methods × tools" note="Where each method family meets each tool. Bubble size is the number of projects; pick one to list them." />
