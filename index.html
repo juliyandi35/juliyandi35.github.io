@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nalarata. Paham dulu, yakin kemudian. Olah data dan pendampingan riset</title>
+<meta name="description" content="Olah data, konsultasi riset, dan tutoring dari konsultan riset dengan 280+ proyek sejak 2023. Dijelaskan sampai kamu bisa membelanya sendiri.">
+<meta name="theme-color" content="#FAFAF5">
+<link rel="icon" href="data:,">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=Azeret+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-wa="6281348609836" data-owner="Juli" data-brand="Nalarata">
+<a class="skip" href="#isi">Langsung ke isi</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#isi" aria-label="Nalarata, kembali ke atas"><i aria-hidden="true"></i>Nalarata</a>
+    <nav class="nav__links" aria-label="Utama">
+      <a href="#layanan">Layanan</a>
+      <a href="#contoh">Contoh kerja</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#sertifikat">Sertifikat</a>
+    </nav>
+    <a class="btn btn--sm" data-wa="general" href="https://wa.me/6281348609836?text=Halo%20Juli%2C%20saya%20dari%20website%20Nalarata.%20Saya%20mau%20tanya%20soal%20layanan%20olah%20data%20dan%20riset.">Chat lewat WhatsApp</a>
+  </div>
+</header>
+
+<main id="isi" tabindex="-1">
+  <section class="hero wrap">
+    <h1>
+      <span class="line"><span>Data yang kamu pahami</span></span>
+      <span class="line"><span>sampai <em class="hl">angka terakhir</em><span class="stop">.</span></span></span>
+    </h1>
+    <div class="hero__body">
+      <div class="hero__text">
+        <p class="lede">Saya Juli, konsultan riset dengan 280+ proyek sejak 2023. Olah data, konsultasi, dan tutoring, dijelaskan sampai kamu bisa membelanya sendiri.</p>
+        <div class="hero__cta">
+          <a class="btn" data-wa="general" href="https://wa.me/6281348609836?text=Halo%20Juli%2C%20saya%20dari%20website%20Nalarata.%20Saya%20mau%20tanya%20soal%20layanan%20olah%20data%20dan%20riset.">Chat lewat WhatsApp</a>
+          <a class="link" href="#layanan">Lihat layanan</a>
+        </div>
+        <p class="motto">Paham dulu, yakin kemudian.</p>
+      </div>
+      <figure class="plot">
+        <svg id="plot" viewBox="0 0 600 420" role="group" aria-label="Diagram sebar interaktif berisi 14 titik. Geser titik dengan mouse, jari, atau tombol panah. Garis regresi dan R kuadrat ikut berubah."></svg>
+        <figcaption class="plot__foot">
+          <p class="readout"><span>y = <b id="ro-a">0,79</b> + <b id="ro-b">0,90</b>x</span><span>R&sup2; = <b id="ro-r">0,97</b></span><span>n = 14</span></p>
+          <div class="plot__row">
+            <p class="hint">Tarik sebuah titik, atau pilih dengan Tab lalu geser dengan tombol panah.</p>
+            <button class="reset" type="button" id="reset">Kembalikan titik</button>
+          </div>
+        </figcaption>
+        <p class="sr-only" id="plot-status" aria-live="polite"></p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="ledger" aria-label="Jumlah proyek">
+    <div class="wrap">
+      <p class="ledger__text">Sejak Maret 2023 saya sudah menyelesaikan <strong class="ledger__num"><span id="count">280</span>+</strong> proyek riset, dari pemodelan statistik dan machine learning sampai analisis sentimen.</p>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+      <p class="ledger__key" aria-hidden="true">Satu titik, satu proyek.</p>
+    </div>
+  </section>
+
+  <section class="svc" id="layanan">
+    <div class="wrap">
+      <h2>Pilih variabel layananmu.</h2>
+      <p class="svc__sub">Pilih jenis layanan dan deadline. Pesan WhatsApp-nya tersusun sendiri, tinggal kirim.</p>
+      <div class="tabs" role="tablist" aria-label="Jenis layanan">
+        <button class="tab t1" role="tab" type="button" id="tab-skripsi" data-service="skripsi" aria-selected="true" aria-controls="panel-skripsi">Skripsi dan tesis<small>olah data, bimbingan statistik</small></button>
+        <button class="tab t2" role="tab" type="button" id="tab-riset" data-service="riset" aria-selected="false" aria-controls="panel-riset" tabindex="-1">Riset, dosen, UMKM<small>konsultasi dan analisis</small></button>
+        <button class="tab t3" role="tab" type="button" id="tab-tutor" data-service="tutor" aria-selected="false" aria-controls="panel-tutor" tabindex="-1">Tutoring<small>matematika, pemrograman, Inggris</small></button>
+      </div>
+
+      <div class="sheet" id="sheet" data-tone="skripsi">
+        <div class="panels">
+          <div class="panel is-on" role="tabpanel" id="panel-skripsi" aria-labelledby="tab-skripsi">
+            <h3>Olah data dan bimbingan statistik</h3>
+            <ul class="ticks">
+              <li>Uji statistik dengan SPSS, R, Python, EViews, Stata, SmartPLS, atau AMOS.</li>
+              <li>Regresi, data panel, deret waktu, model spasial.</li>
+              <li>Hasil dijelaskan dengan bahasa yang bisa kamu ucapkan sendiri.</li>
+              <li>Simulasi tanya jawab sidang sampai kamu siap.</li>
+            </ul>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-riset" aria-labelledby="tab-riset">
+            <h3>Konsultasi riset dan analisis data</h3>
+            <ul class="ticks">
+              <li>Rancangan penelitian, pemilihan variabel dan metode.</li>
+              <li>Statistik dan machine learning, termasuk klasifikasi, klaster, analisis sentimen.</li>
+              <li>Ringkasan temuan dan visualisasi untuk laporan atau dashboard.</li>
+            </ul>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-tutor" aria-labelledby="tab-tutor">
+            <h3>Tutoring matematika, pemrograman, dan bahasa Inggris</h3>
+            <ul class="ticks">
+              <li>Jadwal dan jumlah sesi disepakati lewat WhatsApp.</li>
+              <li>Materi mengikuti kurikulum dan targetmu. Kamu yang mengerjakan soal, saya yang menjelaskan caranya.</li>
+              <li>Dari dasar pemrograman sampai data science.</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="composer" action="#" onsubmit="return false">
+          <fieldset>
+            <legend>Kapan kamu butuh hasilnya?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="deadline" value="kurang dari 1 minggu"><span>Kurang dari 1 minggu</span></label>
+              <label class="chip"><input type="radio" name="deadline" value="sekitar 1 sampai 4 minggu"><span>1 sampai 4 minggu</span></label>
+              <label class="chip"><input type="radio" name="deadline" value="lebih dari 1 bulan"><span>Lebih dari 1 bulan</span></label>
+              <label class="chip"><input type="radio" name="deadline" value="belum pasti" checked><span>Belum pasti</span></label>
+            </div>
+          </fieldset>
+          <p class="preview-label" id="preview-label">Pesan yang akan terkirim</p>
+          <p class="preview" id="preview" aria-labelledby="preview-label" aria-live="polite">Halo Juli, saya dari website Nalarata. Saya mau tanya soal <span class="ink">olah data dan bimbingan statistik untuk skripsi atau tesis</span>. Deadline saya <span class="ink">belum pasti</span>. Mohon info ruang lingkup dan harganya.</p>
+          <div class="buy">
+            <div>
+              <p class="price">Mulai dari Rp100 ribu*</p>
+              <p class="fine">*Harga tergantung tingkat kesulitan dan jumlah request di project.</p>
+            </div>
+            <a class="btn" id="send" href="https://wa.me/6281348609836?text=Halo%20Juli%2C%20saya%20dari%20website%20Nalarata.%20Saya%20mau%20tanya%20soal%20olah%20data%20dan%20bimbingan%20statistik%20untuk%20skripsi%20atau%20tesis.%20Deadline%20saya%20belum%20pasti.%20Mohon%20info%20ruang%20lingkup%20dan%20harganya.">Chat lewat WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="contoh">
+    <div class="wrap">
+      <h2>Contoh pekerjaan.</h2>
+      <p class="sub">Dua hasil dari portofolio saya: pemodelan geografis dan jaringan saraf tiruan.</p>
+      <div class="plates">
+        <figure class="plate plate--map">
+          <div class="plate__img">
+            <img src="assets/work-spatial-map.webp" width="820" height="512" loading="lazy" decoding="async" alt="Peta Kalimantan Barat yang diwarnai menurut variabel yang signifikan di tiap wilayah">
+            <svg class="mark" viewBox="0 0 820 512" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M612 148 C 700 140, 800 146, 812 150 C 816 220, 814 300, 808 338 C 740 346, 660 344, 614 340 C 608 280, 610 200, 612 148"/></svg>
+          </div>
+          <figcaption>Peta variabel yang signifikan di tiap wilayah Kalimantan Barat, hasil pemodelan geografis.</figcaption>
+        </figure>
+        <figure class="plate plate--ann">
+          <div class="plate__img">
+            <img src="assets/work-neural-network.webp" width="630" height="600" loading="lazy" decoding="async" alt="Empat grafik pencocokan model jaringan saraf tiruan untuk data latih, validasi, uji, dan keseluruhan">
+            <svg class="mark" viewBox="0 0 630 600" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M117 37 C 122 20, 267 19, 269 36 C 271 52, 137 55, 119 41 C 115 37, 121 29, 147 25"/></svg>
+          </div>
+          <figcaption>Jaringan saraf tiruan untuk prediksi. Korelasi (R) 0,91 pada data latih, 0,85 pada validasi, dan 0,88 pada uji.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bounds">
+    <div class="wrap">
+      <h2>Yang saya kerjakan dan yang tidak.</h2>
+      <div class="bounds__cols">
+        <div class="bounds__col bounds__col--yes">
+          <h3>Saya kerjakan</h3>
+          <ul class="marks marks--yes">
+            <li>Mengolah dan menganalisis datamu.</li>
+            <li>Menjelaskan setiap langkah dan hasilnya.</li>
+            <li>Memeriksa metode, variabel, dan interpretasimu.</li>
+            <li>Simulasi tanya jawab sidang sampai kamu siap.</li>
+          </ul>
+        </div>
+        <div class="bounds__col bounds__col--no">
+          <h3>Tidak saya kerjakan</h3>
+          <ul class="marks marks--no">
+            <li>Mengubah atau mengarang data supaya hasilnya bagus.</li>
+            <li>Menjanjikan hasil analisis tertentu sebelum datanya diolah.</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="flow__title">Alur kerja</h3>
+      <ol class="flow" id="flow">
+        <li>Kirim kebutuhan dan deadline lewat WhatsApp.</li>
+        <li>Terima ruang lingkup dan harga tertulis.</li>
+        <li>Pekerjaan berjalan, setiap langkah dijelaskan.</li>
+        <li>Tanya jawab sampai kamu paham.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="wrap about__in">
+      <div class="about__figs">
+        <figure class="about__fig about__fig--a">
+          <img src="assets/formal-lapel.webp" width="852" height="1279" loading="lazy" decoding="async" alt="Juli Yandi Rahman berjas hitam, memegang kerah jas">
+        </figure>
+        <figure class="about__fig about__fig--b">
+          <img src="assets/formal-seated.webp" width="852" height="1279" loading="lazy" decoding="async" alt="Juli Yandi Rahman duduk di bangku tinggi berjas hitam, merapikan kancing jas">
+        </figure>
+        <figure class="about__fig about__fig--c">
+          <img src="assets/formal-profile.webp" width="853" height="1280" loading="lazy" decoding="async" alt="Juli Yandi Rahman berjas hitam, menatap ke samping dengan tangan memegang kerah jas">
+        </figure>
+      </div>
+      <div class="about__text">
+        <h2>Saya Juli Yandi Rahman, S.Mat.</h2>
+        <p>Dari 2023 sampai 2026 saya konsultan riset pengolahan data statistik di Educativa ID. Saya mengolah data klien dengan regresi, klasterisasi, dan machine learning, lalu mempresentasikan hasilnya dan menjawab pertanyaan lewat pertemuan online.</p>
+        <dl class="facts">
+          <div class="f1"><dt>Pendidikan</dt><dd>S-1 Matematika, Universitas Pertahanan Republik Indonesia. IPK 3,56, 2020 sampai 2024.</dd></div>
+          <div class="f2"><dt>Riset</dt><dd>Program riset di Badan Riset dan Inovasi Nasional (BRIN), 2023. IPK 4,00.</dd></div>
+          <div class="f3"><dt>Alat</dt><dd>R, Python, SPSS, EViews, Stata, Minitab, SmartPLS, AMOS, JASP, MATLAB, QGIS. Sebagian analisis terbuka di <a href="https://github.com/juliyandi35">303 repositori GitHub</a>.</dd></div>
+          <div class="f4"><dt>Bahasa</dt><dd>Indonesia (bahasa ibu), Inggris (fasih secara profesional), Jepang (aktif).</dd></div>
+        </dl>
+        <h3>Publikasi</h3>
+        <ul class="pubs">
+          <li><a href="https://doi.org/10.28919/cmbn/8428" lang="en">Bayesian Spatial Hierarchical Mixture Models for Excess Zeros Data: Review and Application to Female Lymphatic Filariasis Cases</a>. <i lang="en">Communications in Mathematical Biology and Neuroscience</i>, 2024, penulis kedua. Terindeks Scopus.</li>
+          <li><a href="http://dx.doi.org/10.24042/djm.v6i2.18928" lang="en">The Influence of Climate Change and Country-based Conflict on Crop Production: Evidence based on Global Panel Data in The Last Decade</a>. <i lang="en">Desimal: Jurnal Matematika</i> (SINTA 3), 2023, penulis pertama.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="certs" id="sertifikat">
+    <div class="wrap">
+      <h2>Sertifikat dan penghargaan.</h2>
+      <p class="sub">Ketuk sertifikat untuk melihat versi penuhnya.</p>
+      <ul class="certs__grid">
+        <li class="cert">
+          <a class="cert__open" href="assets/cert-krenova.webp"><img src="assets/cert-krenova.webp" width="1200" height="848" loading="lazy" decoding="async" alt="Sertifikat Juara 1 Kategori Eksternal Krenova 2021 atas nama Juli Yandi Rahman"></a>
+          <p class="cert__cap">Juara 1 kategori eksternal, Krenova 2021.</p>
+        </li>
+        <li class="cert">
+          <a class="cert__open" href="assets/cert-iiapo.webp"><img src="assets/cert-iiapo.webp" width="1200" height="849" loading="lazy" decoding="async" alt="Sertifikat medali perak Indonesia International Applied Science Project Olympiad 2022 atas nama Juli Yandi Rahman"></a>
+          <p class="cert__cap">Medali perak kategori kewirausahaan, Indonesia International Applied Science Project Olympiad 2022.</p>
+        </li>
+        <li class="cert">
+          <a class="cert__open" href="assets/cert-spatial.webp"><img src="assets/cert-spatial.webp" width="1200" height="893" loading="lazy" decoding="async" alt="Sertifikat Intermediate Spatial Data Analysis with R, QGIS and More dari Udemy"></a>
+          <p class="cert__cap">Intermediate Spatial Data Analysis with R, QGIS &amp; More, Udemy, Juli 2024.</p>
+        </li>
+        <li class="cert">
+          <a class="cert__open" href="assets/cert-dqlab.webp"><img src="assets/cert-dqlab.webp" width="1200" height="848" loading="lazy" decoding="async" alt="Sertifikat Introduction to Data Science with R dari DQLab"></a>
+          <p class="cert__cap">Introduction to Data Science with R, DQLab, November 2022.</p>
+        </li>
+      </ul>
+      <p class="certs__more">Juga: Aptis, British Council Indonesia (Agustus 2024). Sharing session TSDN 2022 tentang R Programming for Machine Learning dan Cleansing Your Data using Python. Pelatihan Pengantar MBKM BRIN (2023). Pemakalah di Young Scholar Symposium on Science and Mathematics Education 2023.</p>
+    </div>
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lb-cap">
+      <img id="lb-img" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      <div class="lightbox__bar">
+        <p id="lb-cap"></p>
+        <form method="dialog"><button class="btn btn--sm" type="submit">Tutup</button></form>
+      </div>
+    </dialog>
+  </section>
+
+  <section class="voices">
+    <div class="wrap">
+      <h2>Kata klien.</h2>
+      <p class="sub">Kutipan asli, dalam bahasa Inggris.</p>
+      <div class="voices__grid">
+        <figure class="quote quote--a">
+          <blockquote lang="en"><p>“The research consultation service exceeded my expectations. Juli helped me structure my thesis, clarify my variables, and apply the right statistical methods.”</p></blockquote>
+          <figcaption>Seno, klien konsultasi riset</figcaption>
+        </figure>
+        <figure class="quote quote--b">
+          <blockquote lang="en"><p>“As someone with limited background in research methodology, I found Juli’s support invaluable.”</p></blockquote>
+          <figcaption>Mitha, klien pendampingan riset</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="kontak">
+    <div class="wrap">
+      <h2>Ceritakan kebutuhan dan deadline-mu.</h2>
+      <a class="btn btn--y btn--press" data-wa="general" href="https://wa.me/6281348609836?text=Halo%20Juli%2C%20saya%20dari%20website%20Nalarata.%20Saya%20mau%20tanya%20soal%20layanan%20olah%20data%20dan%20riset.">Chat lewat WhatsApp</a>
+      <ul class="contacts">
+        <li><a href="mailto:juliyandi35@gmail.com">juliyandi35@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/juli-yandi-rahman-3a2257290">LinkedIn</a></li>
+        <li><a href="https://github.com/juliyandi35">GitHub</a></li>
+        <li><a href="tel:+6281348609836">+62 813 4860 9836</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__motto">Paham dulu, yakin kemudian.</p>
+    <p>© 2026 Nalarata. Pendampingan riset dan olah data oleh Juli Yandi Rahman, S.Mat.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
